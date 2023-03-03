@@ -1,0 +1,39 @@
+.fei-rate {
+  height: 20px;
+  line-height: 1;
+  outline: none;
+}
+.fei-rate__item {
+  font-size: 0;
+  vertical-align: middle;
+}
+.fei-rate__icon, .fei-rate__item {
+  display: inline-block;
+  position: relative;
+}
+
+.fei-rate__icon {
+  font-size: 20px;
+  margin-right: 6px;
+  color: #c0c4cc;
+  transition: var(--fei-animation-duration-base);
+  &.hover {
+    transform: scale(1.15);
+  }
+}
+
+.fei-rate__decimal, .fei-rate__icon .path2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.fei-rate__decimal {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 20px;
+}
+.fei-rate__text {
+  font-size: 14px;
+  vertical-align: middle;
+}
+

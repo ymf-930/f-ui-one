@@ -1,0 +1,145 @@
+.fei-checkbox {
+  display: inline-block;
+  height: 100%;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-right: 8px;
+  user-select: none;
+  font-size: var(--fei-base-font-size);
+  &-group {
+    font-size: 0;
+  }
+  &__label {
+    padding: 0 8px;
+    vertical-align: middle;
+  }
+  &__inner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: var(--fei-border-base);
+    border-radius: var(--fei-border-base-radius);
+    background-color: var(--fei-color-white);
+    transition: border-color var(--fei-animation-duration-base) ease-in-out, background-color var(--fei-animation-duration-base) ease-in-out;
+    &:after {
+      content: "";
+      position: absolute;
+      display: table;
+      width: 4.714px;
+      height: 9.142px;
+      top: 6px;
+      left: 3px;
+      border: 2px solid #fff;
+      border-top: 0;
+      border-left: 0;
+      transform: rotate(45deg) scale(1) translate(-50%, -50%);
+      transition: all var(--fei-animation-duration-base) ease-in-out;
+      border-top: 0;
+      border-left: 0;
+    }
+  }
+  &__input {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    line-height: 1;
+    width: 16px;
+    height: 16px;
+    &.is-checked {
+      .fei-checkbox__inner {
+        border-color: var(--fei-color-primary);
+        background-color: var(--fei-color-primary);
+      }
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid var(--fei-color-primary);
+        border-radius: var(--fei-border-base-radius);
+        animation: checkEffect var(--fei-animation-duration-slow) ease-in-out;
+        animation-fill-mode: backwards;
+        content: '';
+      }
+    }
+    &.is-disabled {
+      cursor: not-allowed;
+      .fei-checkbox__inner {
+        background-color: #f3f3f3;
+        border-color: #dcdee2;
+        &:after {
+          border-color: #f3f3f3;
+        }
+      }
+      &.is-checked {
+        &:after {
+          border-color: #dcdee2;
+        }
+        .fei-checkbox__inner:after {
+          -webkit-animation-name: none;
+          animation-name: none;
+          border-color: #ccc;
+        }
+      }
+    }
+    &.is-indeterminate {
+      .fei-checkbox__inner {
+        border: var(--fei-border-base);
+        background-color: var(--fei-color-white);
+      }
+      .fei-checkbox__inner:after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        transform: scale(1) translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        border: none;
+        background-color: var(--fei-color-primary);
+      }
+    }
+  }
+  &__original {
+    position: absolute;
+    opacity: 0;
+    outline: none;
+    margin: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    &[disabled] {
+      cursor: not-allowed;
+    }
+  }
+
+  &:hover {
+    .fei-checkbox__inner {
+      border-color: var(--fei-color-primary-light1);
+    }
+  }
+  &.is-disabled {
+    .fei-checkbox__label {
+      color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}
+
+@keyframes checkEffect {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,93 @@
+.fei-dropdown {
+  display: inline-block;
+  position: relative;
+  color: var(--fei-color-text-default);
+  font-size: var(--fei-base-font-size);
+  i.b-iconfont {
+    font-size: 14px;
+  }
+}
+
+.fei-dropdown__popper {
+  &.fei-popper[role=tooltip] {
+    padding: 4px 0;
+    background-color: #fff;
+    max-height: none;
+    box-shadow: var(--fei-shadow-down);
+    border: none;
+    &.is-dark {
+      background-color: var(--fei-dark-bg);
+      .fei-dropdown-menu .fei-dropdown-item {
+        color: rgba(255, 255, 255, .65);
+        &:hover, &:focus {
+          outline: none;
+          color: #fff;
+          background-color: transparent;
+        }
+        &-selected {
+          background-color: var(--fei-color-primary);
+          color: #fff;
+        }
+        &-disabled {
+          color: rgba(255, 255, 255, .35) !important;
+          cursor: not-allowed;
+        }
+        &-divided {
+          border-top: 1px solid #a0a0a0;
+        }
+      }
+    }
+  }
+  .fei-dropdown__popper-selfdefine {
+    outline: 0
+  }
+}
+
+.fei-dropdown-menu {
+  min-width: 100px;
+  .fei-dropdown {
+    width: 100%;
+  }
+  .fei-dropdown-item {
+    margin: 0;
+    padding: 0 10px;
+    line-height: 32px;
+    width: 100%;
+    clear: both;
+    color: var(--fei-color-text-default);
+    font-size: var(--fei-base-font-size) !important;
+    white-space: nowrap;
+    list-style: none;
+    cursor: pointer;
+    transition: background var(--fei-animation-duration-base) ease-in-out;
+    &:hover, &:focus {
+      background: #f3f3f3;
+      outline: none;
+    }
+
+    &-selected {
+      background: var(--fei-color-primary-light5);
+    }
+    &-disabled {
+      color: var(--fei-color-text-disabled) !important;
+      cursor: not-allowed;
+      &:hover {
+        color: var(--fei-color-text-disabled) !important;
+        background-color: #fff;
+        cursor: not-allowed;
+      }
+    }
+    &-divided {
+      border-top: 1px solid #e8eaec;
+    }
+    > .b-iconfont {
+      position: relative;
+      margin-right: 4px;
+    }
+    .b-icon-right {
+      position: relative;
+      right: -6px;
+    }
+  }
+
+}

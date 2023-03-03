@@ -1,0 +1,101 @@
+.fei-alert {
+  position: relative;
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: var(--fei-border-base-radius);
+  color: var(--fei-color-text-default);
+  font-size: var(--fei-base-font-size);
+  line-height: var(--fei-base-line-height);
+  margin-bottom: 10px;
+  &.fei-alert-with-icon {
+    padding: 8px 48px 8px 38px;
+  }
+  &.fei-alert-with-desc {
+    &.fei-alert-with-icon {
+      padding: 8px 16px 8px 69px;
+    }
+    .fei-alert-icon {
+      left: 24px;
+      .b-iconfont {
+        font-size: 36px;
+      }
+    }
+    .fei-alert-desc {
+      display: block;
+    }
+  }
+}
+
+.fei-alert-success {
+  border: 1px solid var(--fei-color-success-light3);
+  background-color: var(--fei-color-success-light6);
+  .fei-alert-icon {
+    color: var(--fei-color-success);
+  }
+}
+
+.fei-alert-info {
+  border: 1px solid var(--fei-color-primary-light3);
+  background-color: var(--fei-color-primary-light6);
+  .fei-alert-icon {
+    color: var(--fei-color-primary);
+  }
+}
+
+.fei-alert-warning {
+  border: 1px solid var(--fei-color-warning-light3);
+  background-color: var(--fei-color-warning-light6);
+  .fei-alert-icon {
+    color: var(--fei-color-warning);
+  }
+}
+
+.fei-alert-error {
+  border: 1px solid var(--fei-color-danger-light3);
+  background-color: var(--fei-color-danger-light6);
+  .fei-alert-icon {
+    color: var(--fei-color-danger);
+  }
+}
+
+.fei-alert-message {
+  font-size: var(--fei-base-font-size);
+  color: var(--fei-color-text-primary);
+}
+.fei-alert-with-desc .fei-alert-message {
+  display: block;
+  font-size: var(--fei-header-font-size);
+  margin-bottom: 4px;
+}
+.fei-alert-desc {
+  display: none;
+  text-align: justify;
+}
+
+.fei-alert-icon {
+  top: 6px;
+  left: 14px;
+  position: absolute;
+  .b-iconfont {
+    line-height: var(--fei-base-line-height);
+    font-size: 18px;
+  }
+}
+.fei-alert-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  .b-icon-close {
+    color: var(--fei-color-text-secondary);
+    transition: color var(--fei-animation-duration-base) ease;
+    position: relative;
+    &:hover {
+      color: var(--fei-color-text-default);
+    }
+  }
+}
+.fei-alert-with-banner {
+  border-radius: 0;
+}

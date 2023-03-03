@@ -1,0 +1,36 @@
+.fei-breadcrumb {
+  font-size: var(--fei-base-font-size);
+  line-height: var(--fei-base-line-height);
+  &:after, &:before {
+    display: table;
+    content: "";
+  }
+}
+
+.fei-breadcrumb__item {
+  &:last-child .fei-separator {
+    display: none;
+  }
+}
+.fei-separator {
+  margin: 0 6px;
+  color: var(--fei-color-text-secondary);
+  &.icon {
+    font-size: 14px;
+    vertical-align: middle;
+    font-weight: normal;
+    line-height: 1;
+  }
+}
+.fei-breadcrumb__inner {
+  color: var(--fei-color-text-default);
+  a {
+    text-decoration: none;
+    transition: color var(--fei-animation-duration-base) cubic-bezier(.645, .045, .355, 1);
+    color: var(--fei-color-text-secondary);
+    &:hover {
+      color: var(--fei-color-primary);
+      cursor: pointer;
+    }
+  }
+}

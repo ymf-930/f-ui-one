@@ -1,0 +1,87 @@
+$arrow-width = 5px;
+$arrow-distance = $arrow-width - 1 + 4;
+$bg-black = #303133
+$bg-light = #FFFFFF
+$border-color = #E4E7ED
+
+.fei-popper {
+  position: absolute;
+  border-radius: var(--fei-border-base-radius);
+  padding: 10px;
+  z-index: 2000;
+  font-size: var(--fei-base-font-size);
+  line-height: var(--fei-base-line-height);
+  min-width: 10px;
+  word-wrap: break-word;
+  visibility: visible;
+  &.is-dark {
+    color: $bg-light;
+    background: $bg-black;
+    .fei-popper__arrow::before {
+      background: $bg-black;
+      right: 0;
+    }
+  }
+  &.is-light {
+    background: $bg-light;
+    box-shadow: var(--fei-shadow-popper);
+    .fei-popper__arrow::before {
+      box-shadow: 3px 3px 7px rgba(0, 0, 0, .07);
+      background: $bg-light;
+      right: 0;
+    }
+  }
+  &.is-pure {
+    padding: 0;
+  }
+}
+
+.fei-popper__arrow {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  z-index: -1;
+  &::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    z-index: -1;
+    content: ' ';
+    transform: rotate(45deg);
+    background: $bg-black;
+    box-sizing: border-box;
+  }
+}
+
+.fei-popper[data-popper-placement^=top] > .fei-popper__arrow {
+  bottom: -4px
+}
+.fei-popper[data-popper-placement^=bottom] > .fei-popper__arrow {
+  top: -4px
+}
+.fei-popper[data-popper-placement^=left] > .fei-popper__arrow {
+  right: -4px
+}
+.fei-popper[data-popper-placement^=right] > .fei-popper__arrow {
+  left: -4px
+}
+.fei-popper.is-light[data-popper-placement^=top] .fei-popper__arrow::before {
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, .07);
+  border-top-color: transparent;
+  border-left-color: transparent
+}
+.fei-popper.is-light[data-popper-placement^=bottom] .fei-popper__arrow::before {
+  box-shadow: -3px -3px 7px rgba(0, 0, 0, .07);
+  border-bottom-color: transparent;
+  border-right-color: transparent
+}
+.fei-popper.is-light[data-popper-placement^=left] .fei-popper__arrow::before {
+  box-shadow: 3px -3px 7px rgba(0, 0, 0, .07);
+  border-left-color: transparent;
+  border-bottom-color: transparent
+}
+.fei-popper.is-light[data-popper-placement^=right] .fei-popper__arrow::before {
+  box-shadow: -3px 3px 7px rgba(0, 0, 0, .07);
+  border-right-color: transparent;
+  border-top-color: transparent
+}

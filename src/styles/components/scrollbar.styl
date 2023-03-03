@@ -1,0 +1,63 @@
+.fei-scrollbar {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  &:active, &:focus, &:hover {
+    > .fei-scrollbar__bar {
+      opacity: 1;
+      transition: opacity .3s ease-out;
+    }
+  }
+}
+
+.fei-scrollbar__wrap {
+  overflow: auto;
+  height: 100%;
+}
+
+// 默认隐藏原生滚动条宽度
+.fei-scrollbar__wrap--hidden-default {
+  scrollbar-width: none
+}
+.fei-scrollbar__wrap--hidden-default::-webkit-scrollbar {
+  display: none
+}
+.fei-scrollbar__bar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity .12s ease-out;
+  &.is-horizontal {
+    height: var(--fei-scrollbar-width);
+    left: 0;
+    > div {
+      height: 100%;
+    }
+  }
+  &.is-vertical {
+    width: var(--fei-scrollbar-width);
+    top: 0;
+    > div {
+      width: 100%;
+    }
+  }
+  &.always {
+    opacity: 1;
+  }
+}
+
+.fei-scrollbar__thumb {
+  position: relative;
+  display: block;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  border-radius: var(--fei-scrollbar-radius);
+  background: rgba(0, 0, 0, 0.2);
+  transition: box-shadow var(--fei-animation-duration-base);
+  &:hover {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}

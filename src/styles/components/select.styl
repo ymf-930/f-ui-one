@@ -1,0 +1,182 @@
+.fei-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--fei-color-text-default);
+  font-size: var(--fei-base-font-size);
+  line-height: var(--fei-base-line-height);
+  &__caret {
+    &.b-iconfont.b-icon-down {
+      color: var(--fei-color-text-secondary);
+      font-size: 14px;
+      transition: transform .3s;
+      cursor: pointer;
+      &.is-reverse {
+        transform: rotateZ(180deg);
+      }
+    }
+    &.is-show-close {
+      color: var(--fei-color-text-secondary);
+      font-size: 14px;
+      transition: transform .3s;
+      cursor: pointer;
+      border-radius: 100%;
+      z-index: 30;
+      background-color: #fff;
+    }
+  }
+  .fei-select__tags {
+    position: absolute;
+    line-height: normal;
+    white-space: normal;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .fei-tag {
+      box-sizing: border-box;
+      border-color: transparent;
+      margin: 2px 0 2px 6px;
+      background-color: #f0f2f5;
+    }
+  }
+  &__input {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-left: 15px;
+    color: #666;
+    font-size: 14px;
+    appearance: none;
+    height: 28px;
+    background-color: transparent;
+  }
+}
+// 下拉框样式
+.fei-select__popper {
+  &.fei-popper {
+    width: inherit;
+    overflow: auto;
+    padding: 4px 0;
+    background-color: var(--fei-color-white);
+    box-sizing: border-box;
+    border-radius: var(--fei-border-base-radius);
+    box-shadow: var(--fei-shadow-popper);
+    position: absolute;
+    z-index: 900;
+    &.is-light {
+      border: none;
+    }
+  }
+  .is-multiple {
+    .fei-select-dropdown__item {
+      &.selected {
+        background-color: #fff !important;
+        &::after {
+          font-family: "b-iconfont" !important;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          content: '\e886';
+          color: var(--fei-color-primary-light1);
+          position: absolute;
+          top: 5px;
+          right: 8px;
+        }
+        &:hover, &:focus, &.hover {
+          background: #f3f3f3 !important;
+          outline: none;
+        }
+      }
+    }
+  }
+  .fei-select-dropdown__empty {
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    color: #999;
+    font-size: 14px
+  }
+  .fei-select-dropdown__wrap {
+    max-height: 274px;
+  }
+  .fei-select-dropdown__list {
+    padding: 0;
+  }
+  .fei-select-dropdown__item {
+    position: relative;
+    margin: 0;
+    padding: 0 18px 0 10px;
+    line-height: 32px;
+    width: 100%;
+    clear: both;
+    color: var(--fei-color-text-default);
+    font-size: var(--fei-base-font-size) !important;
+    white-space: nowrap;
+    list-style: none;
+    cursor: pointer;
+    transition: background var(--fei-animation-duration-base) ease-in-out;
+    &:hover, &:focus, &.hover {
+      background: #f3f3f3;
+      outline: none;
+    }
+    &.selected {
+      color: var(--fei-color-primary);
+      background: var(--fei-color-primary-light5);
+      &:hover, &:focus, &.hover {
+        background: #f3f3f3;
+        outline: none;
+      }
+      &::after {
+        font-family: "b-iconfont" !important;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        content: '\e886';
+        color: var(--fei-color-primary-light1);
+        position: absolute;
+        top: 0;
+        right: 4px;
+      }
+    }
+    &.is-disabled {
+      color: var(--fei-color-text-disabled) !important;
+      cursor: not-allowed;
+      &:hover {
+        color: var(--fei-color-text-disabled) !important;
+        background-color: #fff;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .fei-select-group__wrap {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &:not(:last-of-type) {
+      padding-bottom: 24px;
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 10px;
+        right: 10px;
+        bottom: 12px;
+        height: 1px;
+        background: #e4e7ed;
+      }
+    }
+  }
+  .fei-select-group__title {
+    padding-left: 8px;
+    font-size: var(--fei-base-font-size);
+    color: var(--fei-color-text-secondary);
+    height: 30px;
+    line-height: 30px;
+  }
+}

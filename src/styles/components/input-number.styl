@@ -1,0 +1,317 @@
+.fei-input-number {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--fei-color-text-default);
+  background-color: var(--fei-color-white);
+  background-image: none;
+  position: relative;
+  transition: border var(--fei-animation-duration-base) ease-in-out, background var(--fei-animation-duration-base) ease-in-out, box-shadow var(--fei-animation-duration-base) ease-in-out;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: var(--fei-default-height);
+  line-height: var(--fei-default-height);
+  vertical-align: middle;
+  border: var(--fei-border-base);
+  border-radius: var(--fei-border-base-radius);
+  overflow: hidden;
+  cursor: default;
+  &:hover {
+    border-color: var(--fei-color-primary);
+  }
+  &:focus {
+    border-color: var(--fei-color-primary);
+    outline: 0;
+    box-shadow: 0 0 0 2px var(--fei-color-input-shadow);
+  }
+  &-always {
+    width: 140px;
+    .fei-input-number-input {
+      text-align: center;
+      padding: 0 38px;
+    }
+    .fei-input-number-handler-minus, .fei-input-number-handler-plus {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      width: var(--fei-default-height);
+      height: var(--fei-default-height);
+      line-height: var(--fei-default-height-2);
+      text-align: center;
+      background: #f5f7fa;
+      color: #606266;
+      cursor: pointer;
+      .b-iconfont {
+        font-size: 14px;
+        vertical-align: top;
+      }
+      &:hover .b-iconfont {
+        color: var(--fei-color-primary);
+      }
+    }
+    .fei-input-number-handler-minus {
+      cursor: pointer;
+      left: 0;
+      border-radius: var(--fei-border-base-radius) 0 0 var(--fei-border-base-radius);
+      border-right: var(--fei-border-base);
+      &-disabled {
+        color: #c0c4cc;
+        cursor: not-allowed;
+        &:hover {
+          .iconfont {
+            color: #c0c4cc;
+          }
+        }
+      }
+      &:hover {
+        .iconfont {
+          color: var(--fei-color-primary);
+        }
+      }
+    }
+    .fei-input-number-handler-plus {
+      cursor: pointer;
+      right: 0;
+      border-radius: 0 var(--fei-border-base-radius) var(--fei-border-base-radius) 0;
+      border-left: var(--fei-border-base);
+      &-disabled {
+        color: #c0c4cc;
+        cursor: not-allowed;
+        &:hover {
+          .iconfont {
+            color: #c0c4cc;
+          }
+        }
+      }
+      &:hover {
+        .iconfont {
+          color: var(--fei-color-primary);
+        }
+      }
+    }
+  }
+}
+.fei-input-number-input-wrap {
+  overflow: hidden;
+  height: var(--fei-default-height);
+}
+.fei-input-number-input {
+  width: 100%;
+  height: var(--fei-default-height);
+  line-height: var(--fei-default-height);
+  padding: 0 11px;
+  text-align: left;
+  outline: 0;
+  -moz-appearance: textfield;
+  color: var(--fei-color-text-default);
+  border: 0;
+  border-radius: var(--fei-border-base-radius);
+  transition: all var(--fei-animation-duration-base) linear;
+}
+
+.fei-input-number-handler-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 22px;
+  height: 100%;
+  border-radius: 0 var(--fei-border-base-radius) var(--fei-border-base-radius) 0;
+  background: var(--fei-color-white);
+}
+//  数字输入
+.fei-input-number-handler {
+  position: absolute;
+  z-index: 1;
+  width: 22px;
+  height: auto;
+  text-align: center;
+  cursor: pointer;
+  font-size: 13px;
+  background: var(--fei-color-white);
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  overflow: hidden;
+  border-left: var(--fei-border-base);
+  color: var(--fei-color-text-secondary);
+  transition: var(--fei-animation-duration-base);
+  &.fei-input-number-handler-up {
+    cursor: pointer;
+    border-bottom: var(--fei-border-base);
+    top: 0;
+    &:hover {
+      z-index: 2;
+      border-left-color: var(--fei-color-primary);
+      border-bottom-color: var(--fei-color-primary);
+      color: var(--fei-color-primary);
+    }
+  }
+  &.fei-input-number-handler-down {
+    cursor: pointer;
+    border-top: var(--fei-border-base);
+    bottom: 0;
+    &:hover {
+      z-index: 2;
+      border-left-color: var(--fei-color-primary);
+      border-top-color: var(--fei-color-primary);
+      color: var(--fei-color-primary);
+    }
+  }
+  &:active {
+    background: var(--fei-color-select-hover);
+  }
+}
+.fei-input-number-handler-down-inner, .fei-input-number-handler-up-inner {
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  transform: scale(0.8);
+  line-height: 12px;
+  font-size: 12px;
+  transition: all var(--fei-animation-duration-base) linear;
+}
+
+.fei-input-number-disabled .fei-input-number-handler-down-inner,
+.fei-input-number-disabled .fei-input-number-handler-up-inner,
+.fei-input-number-handler-down-disabled .fei-input-number-handler-down-inner,
+.fei-input-number-handler-down-disabled .fei-input-number-handler-up-inner,
+.fei-input-number-handler-up-disabled .fei-input-number-handler-down-inner,
+.fei-input-number-handler-up-disabled .fei-input-number-handler-up-inner {
+  opacity: .72;
+  color: var(--fei-color-text-disabled) !important;
+  cursor: not-allowed;
+}
+//   禁用状态
+.fei-input-number-disabled .fei-input-number-input {
+  opacity: .72;
+  cursor: not-allowed;
+  background-color: #f3f3f3;
+}
+.fei-input-number-input[disabled] {
+  background-color: #f3f3f3;
+  opacity: 1;
+  cursor: not-allowed;
+  color: var(--fei-color-text-disabled);
+}
+
+.fei-input-number-disabled.fei-input-number-always {
+  .fei-input-number-handler-minus {
+    color: #c0c4cc;
+    cursor: not-allowed;
+    &:hover {
+      .iconfont {
+        color: #c0c4cc;
+      }
+    }
+  }
+  .fei-input-number-handler-plus {
+    color: #c0c4cc;
+    cursor: not-allowed;
+    &:hover {
+      .iconfont {
+        color: #c0c4cc;
+      }
+    }
+  }
+}
+//不同尺寸
+.fei-input-number-mini {
+  padding: 0;
+  height: var(--fei-mini-height);
+  border-radius: var(--fei-border-base-radius);
+  input {
+    height: var(--fei-mini-height);
+    line-height: var(--fei-mini-height);
+    vertical-align: top;
+  }
+  .fei-input-number-handler {
+    height: 12px;
+  }
+  .fei-input-number-input-wrap {
+    height: var(--fei-mini-height);
+  }
+  &.fei-input-number-always {
+    width: 100px;
+    .fei-input-number-input {
+      text-align: center;
+      padding: 0 var(--fei-small-height);
+    }
+    .fei-input-number-handler-minus, .fei-input-number-handler-plus {
+      width: var(--fei-mini-height);
+      height: var(--fei-mini-height);
+      line-height: var(--fei-mini-height-2);
+    }
+  }
+}
+.fei-input-number-small {
+  padding: 0;
+  height: var(--fei-small-height);
+  border-radius: var(--fei-border-base-radius);
+  input {
+    height: var(--fei-small-height);
+    line-height: var(--fei-small-height);
+    vertical-align: top;
+  }
+  .fei-input-number-handler {
+    height: 14px;
+  }
+  .fei-input-number-input-wrap {
+    height: var(--fei-small-height);
+  }
+  &.fei-input-number-always {
+    width: 120px;
+    .fei-input-number-input {
+      text-align: center;
+      padding: 0 var(--fei-default-height);
+    }
+    .fei-input-number-handler-minus, .fei-input-number-handler-plus {
+      width: var(--fei-small-height);
+      height: var(--fei-small-height);
+      line-height: var(--fei-small-height-2);
+    }
+  }
+}
+.fei-input-number-default {
+  .fei-input-number-handler {
+    height: 16px;
+  }
+}
+.fei-input-number-large {
+  font-size: var(--fei-header-font-size);
+  padding: 0;
+  height: var(--fei-large-height);
+  input {
+    height: var(--fei-large-height);
+    line-height: var(--fei-large-height);
+    font-size: var(--fei-header-font-size);
+  }
+  .fei-input-number-handler {
+    height: 18px;
+  }
+  .fei-input-number-input-wrap {
+    height: var(--fei-large-height);
+  }
+  &.fei-input-number-always {
+    width: 160px;
+    .fei-input-number-input {
+      text-align: center;
+      padding: 0 40px;
+    }
+    .fei-input-number-handler-minus, .fei-input-number-handler-plus {
+      width: var(--fei-large-height);
+      height: var(--fei-large-height);
+      line-height: var(--fei-default-height);
+    }
+  }
+}
+
+.fei-input-number-focused {
+  border-color: var(--fei-color-primary);
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--fei-color-input-shadow);
+}
+
