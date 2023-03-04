@@ -3,9 +3,9 @@
     <div class="header-container">
       <div class="left" style="width: 580px" flex="main:justify cross:center">
         <div class="logo">
-          <img src="../assets/images/logo/bin-ui-next-02.svg" class="icon" alt="icon"/>
+          <img src='../assets/images/logo/f-ui-logo.svg' class="icon" alt="icon"/>
           <div class="text">
-            <img src="../assets/images/text.svg" alt="text"/>
+            <img src="../assets/images/f-ui-text.svg" alt="text"/>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@
         </f-dropdown>
         <router-link :to="{ name: 'color' }" class="active">色彩设计</router-link>
         <a
-          href="https://gitee.com/wangbin3162/bin-ui-next"
+          href="https://gitee.com/daijuymf/f-ui"
           class="github"
           target="_blank"
         >国内镜像</a>
@@ -106,17 +106,17 @@ export default {
       height: 80px;
       padding-left: 24px;
       .icon {
-        width: 54px;
-        height: 54px;
+        width: 70px;
+        height: 70px;
       }
       .text {
         height: 64px;
         overflow: hidden;
-        margin-left: 18px;
+        margin-left: 10px;
         img {
           width: 100%;
           opacity: .85;
-          transform: translate(-132px, -166px);
+          transform: translate(-170px, -145px);
         }
       }
     }

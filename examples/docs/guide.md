@@ -20,13 +20,13 @@ f-ui 是基于vue3.0 的组件库，提供常用组件和公共样式、函数
 
 ### 版本
 
-[![NPM version](https://img.shields.io/npm/v/bin-ui-next.svg)](https://www.npmjs.com/package/bin-ui-next)
+[![NPM version](https://img.shields.io/npm/v/bin-ui-next.svg)](https://www.npmjs.com/package/f-ui)
 
 ### 相关链接
 
 [element-plus](https://element-plus.gitee.io/#/zh-CN/component/installation)
 
-[bin-ui](https://wangbin3162.gitee.io/bin-ui/)
+[f-ui](https://gitee.com/daijuymf/f-ui-introduce/)
 
 ### 安装
 
