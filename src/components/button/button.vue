@@ -11,12 +11,12 @@
     <span :style="textStyle">
       <i
         class="fei-button-loading icon-is-rotating"
-        :class="['b-iconfont', `b-icon-${loadingIcon||'loading'}`,{'has-text':$slots.default}]"
+        :class="['f-iconfont', `f-icon-${loadingIcon||'loading'}`,{'has-text':$slots.default}]"
         v-if="loading"
         :style="iconStyles"
       ></i>
       <i
-        :class="['b-iconfont', 'b-icon-' + icon,{'has-text':$slots.default}]"
+        :class="['f-iconfont', 'f-icon-' + icon,{'has-text':$slots.default}]"
         v-if="icon && !loading"
         :style="iconStyles"
       ></i>
@@ -37,12 +37,12 @@
   >
     <i
       class="fei-button-loading icon-is-rotating"
-      :class="['b-iconfont', `b-icon-${loadingIcon||'loading'}`,{'has-text':$slots.default}]"
+      :class="['f-iconfont', `f-icon-${loadingIcon||'loading'}`,{'has-text':$slots.default}]"
       v-if="loading"
       :style="iconStyles"
     ></i>
     <i
-      :class="['b-iconfont', 'b-icon-' + icon,{'has-text':$slots.default}]"
+      :class="['f-iconfont', 'f-icon-' + icon,{'has-text':$slots.default}]"
       v-if="icon && !loading"
       :style="iconStyles"
     ></i>

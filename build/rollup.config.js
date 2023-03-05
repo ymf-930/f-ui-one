@@ -14,7 +14,7 @@ const name = 'FUI'
 const createBanner = () => {
   return `/*!
   * ${pkg.name} v${pkg.version}
-  * (c) ${new Date().getFullYear()} wangbin
+  * (c) ${new Date().getFullYear()} yangmengfei
   * @license MIT
   */`
 }
