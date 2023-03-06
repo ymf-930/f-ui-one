@@ -30,7 +30,7 @@
       return {
         color1: '#409EFF',
         color2: null,
-        color3: '#1089ff'
+        color3: '#1677ff'
       }
     }
   };
@@ -90,10 +90,10 @@
   export default {
     data() {
       return {
-        color1: '#2d8cf0',
-        color2: '#2d8cf0',
+        color1: '#1677ff',
+        color2: '#1677ff',
         colors1: [
-          '#1089ff',
+          '#1677ff',
           '#52c41a',
           '#fa8c16',
           '#f5222d',
@@ -157,7 +157,7 @@
   export default {
     data() {
       return {
-        color: '#2d8cf0'
+        color: '#1677ff'
       }
     }
   };
@@ -190,7 +190,7 @@
   export default {
     data() {
       return {
-        color: '#2d8cf0'
+        color: '#1677ff'
       }
     }
   };

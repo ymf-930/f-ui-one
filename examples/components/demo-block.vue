@@ -97,7 +97,7 @@ export default {
       right: 24px;
       font-size: 12px;
       cursor: pointer;
-      color: #1089ff;
+      color: #1677ff;
     }
   }
   .description {
@@ -166,7 +166,7 @@ export default {
       transition: .3s;
     }
     &:hover {
-      color: #1089ff;
+      color: #1677ff;
     }
     &:before {
       content: '';

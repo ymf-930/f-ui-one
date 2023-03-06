@@ -55,7 +55,7 @@ util方法函数
       import 'flex.css/dist/data-flex.css';
    -->
   <!-- flex属性匹配，简单的子元素居中例子： -->
-  <div flex="main:center cross:center" style="height: 80px; border:1px solid #1089ff">
+  <div flex="main:center cross:center" style="height: 80px; border:1px solid #1677ff">
     <div style="background: #fff;padding: 15px;">看看我是不是居中的</div>
   </div>
 </template>
@@ -163,7 +163,7 @@ box：子元素设置
 | f-s-20   | 字体大小20  | 
 | f-s-22   | 字体大小22  | 
 | f-s-20   | 字体大小20  | 
-| f-color-blue  | 文字颜色#1089ff;  | 
+| f-color-blue  | 文字颜色#1677ff;  | 
 | f-color-red  | 文字颜色#f5222d;  | 
 | f-color-333  | 文字颜色#333;  | 
 | f-color-666  | 文字颜色#666;  | 

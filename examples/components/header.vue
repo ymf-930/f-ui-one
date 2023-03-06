@@ -98,7 +98,7 @@ export default {
     .logo {
       display: flex;
       align-items: center;
-      color: #1089ff;
+      color: #1677ff;
       text-transform: uppercase;
       font-weight: bold;
       font-family: helvetica;
@@ -137,7 +137,7 @@ export default {
         padding: 0 22px;
         font-size: 15px;
         &:hover {
-          color: #1089ff;
+          color: #1677ff;
         }
       }
       > span {

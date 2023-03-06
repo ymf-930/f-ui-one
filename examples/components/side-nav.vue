@@ -85,9 +85,9 @@ export default {
     transition: .15s ease;
     opacity: 0;
     &:hover {
-      border: 1px solid #1089ff;
+      border: 1px solid #1677ff;
       i {
-        color: #1089ff;
+        color: #1677ff;
       }
     }
   }
@@ -124,7 +124,7 @@ export default {
       font-weight: normal;
       cursor: pointer;
       &:hover {
-        color: #2d8cf0;
+        color: #1677ff;
       }
     }
     .side-nav-group {
@@ -156,7 +156,7 @@ export default {
       }
     }
     .active {
-      color: #2d8cf0;
+      color: #1677ff;
       background: #f0faff;
       &::after {
         content: "";
@@ -166,7 +166,7 @@ export default {
         top: 0;
         bottom: 0;
         left: 0;
-        background: #1089ff;
+        background: #1677ff;
       }
     }
   }

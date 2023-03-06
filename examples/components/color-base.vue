@@ -222,7 +222,7 @@ export default {
   name: 'color-base',
   data() {
     return {
-      primary: '#1089ff',
+      primary: '#1677ff',
       success: '#52c41a',
       info: '#35495e',
       warning: '#fa8c16',
@@ -257,7 +257,7 @@ export default {
       customColor4: '#a0d911',
       customColor5: '#fa541c',
       customColor6: '#2f54eb',
-      custom: '#1089ff',
+      custom: '#1890ff',
       colorsList: [
         '#1089ff',
         '#52c41a',

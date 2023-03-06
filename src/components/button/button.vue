@@ -106,7 +106,7 @@ export default {
     },
     textStyle() {
       const colorMap = {
-        primary: '#1089ff',
+        primary: '#1677ff',
         success: '#52c41a',
         info: '#35495E',
         warning: '#fa8c16',

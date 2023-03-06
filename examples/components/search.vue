@@ -213,7 +213,7 @@ export default {
           margin: 0 8px;
         }
         &:hover {
-          background: #1089ff;
+          background: #1677ff;
           color: #fff;
         }
       }

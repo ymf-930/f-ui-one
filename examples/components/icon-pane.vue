@@ -91,7 +91,7 @@ export default {
       }
       &:hover {
         span {
-          color: #5cb6ff;
+          color: #1677ff;
         }
         i {
           font-size: 40px;

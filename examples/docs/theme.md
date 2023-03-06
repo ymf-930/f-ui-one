@@ -82,7 +82,7 @@ Bin UI Next 提供了一套默认的主题变量，并在一定程度上可以�
     --fei-color-white-light2: rgba(255, 255, 255, 0.35);
     --fei-dark-bg: #001529;
     /* primary-color */
-    --fei-color-primary: #1089ff;
+    --fei-color-primary: #1677ff;
     --fei-color-primary-light1: #40a1ff;
     --fei-color-primary-light2: #70b8ff;
     --fei-color-primary-light3: #9fd0ff;

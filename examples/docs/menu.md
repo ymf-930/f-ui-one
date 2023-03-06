@@ -266,7 +266,7 @@
 | collapse            | 是否水平折叠收起菜单（仅在 mode 为 vertical 时可用）  | boolean | —  | false    |
 | background-color    | 菜单的背景色（仅支持 hex 格式）     | string  | —     | #ffffff  |
 | text-color          | 菜单的文字颜色（仅支持 hex 格式）     | string  | —   | rgba(0,0,0,.65)  |
-| active-text-color   | 当前激活菜单的文字颜色（仅支持 hex 格式）     | string  | —   | #1089ff  |
+| active-text-color   | 当前激活菜单的文字颜色（仅支持 hex 格式）     | string  | —   | #1677ff  |
 | default-active      | 当前激活菜单的 index          | string  | —      | —        |
 | default-openeds     | 当前打开的 suf-menu 的 index 的数组       | Array   | —    | —        |
 | unique-opened       | 是否只保持一个子菜单的展开      | boolean | —      | false    |

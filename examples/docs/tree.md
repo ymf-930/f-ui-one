@@ -754,10 +754,10 @@ expand、selected、checked 和 disabled 可以设置展开，选中，勾选和
           measure: 'linechart',
         }
         const colorMap = {
-          root: '#1089ff',
-          hierarchy: '#1089ff',
+          root: '#1677ff',
+          hierarchy: '#1677ff',
           folder: '#35495e',
-          dimension: '#1089ff',
+          dimension: '#1677ff',
           measure: '#52c41a',
         }
         const iconType = data.nodeType === 'attribute' ? data.type : data.nodeType
@@ -888,7 +888,7 @@ expand、selected、checked 和 disabled 可以设置展开，选中，勾选和
                   h('span', data.title),
                   h('i', {
                     class: ['f-iconfont', 'f-icon-plus-square-fill'],
-                    style: { fontSize: '16px', color: '#1089ff', marginRight: '4px' },
+                    style: { fontSize: '16px', color: '#1677ff', marginRight: '4px' },
                     onClick: () => {
                       this.append(data)
                     },

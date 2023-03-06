@@ -32,7 +32,7 @@ export default {
     },
     strokeColor: {
       type: String,
-      default: '#1089ff',
+      default: '#1677ff',
     },
     strokeLinecap: {
       validator: (value) => ['square', 'round'].includes(value),

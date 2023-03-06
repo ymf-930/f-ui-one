@@ -112,6 +112,6 @@ Progress 组件设置 `percent` 属性即可，表示进度条对应的百分比
 | text-inside  |  进度条显示文字内置在进度条内  | boolean  |   —   |  false   |
 | show-text |  是否显示进度文字   | Boolean  |   —   |  true   |
 | bg-color |  进度条背景颜色   | String  |   —   |  #f3f3f3   |
-| color  |  进度条的颜色   | String  |   —   |  #2d8cf0   |
+| color  |  进度条的颜色   | String  |   —   |  #1677ff   |
 | radius |  进度条的圆角   | String  |   —   |  100px   |
 | active |  进度条背景动画   | Boolean  |   —   |  false   |

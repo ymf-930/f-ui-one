@@ -46,16 +46,16 @@
 <template>
   <f-button type="primary" @click="restart">restart</f-button>
   <div class="mt-15" flex="cross:center">
-    <div style="font-size:18px; color: #1089ff; width: 120px;margin-right:16px;" >
+    <div style="font-size:18px; color: #1677ff; width: 120px;margin-right:16px;" >
       <f-count-to :startVal='startVal' :endVal='endVal' :duration="3000" ref="countTo1"></f-count-to>
     </div>
-    <div style="font-size:18px; color: #1089ff; width: 120px;margin-right:16px;" >
+    <div style="font-size:18px; color: #1677ff; width: 120px;margin-right:16px;" >
       <f-count-to :startVal='startVal' :endVal='endVal' :duration="3000" :decimals="2" ref="countTo2"></f-count-to>
     </div>
-    <div style="font-size:18px; color: #1089ff; width: 120px;margin-right:16px;" >
+    <div style="font-size:18px; color: #1677ff; width: 120px;margin-right:16px;" >
       <f-count-to :startVal='startVal' :endVal='endVal' :duration="3000" separator="" ref="countTo3"></f-count-to>
     </div>
-    <div style="font-size:18px; color: #1089ff; width: 120px;margin-right:16px;" >
+    <div style="font-size:18px; color: #1677ff; width: 120px;margin-right:16px;" >
       <f-count-to :startVal='startVal' :endVal='endVal' :duration="3000" prefix="$" suffix="美金" ref="countTo4"></f-count-to>
     </div>
   </div>
