@@ -33,11 +33,11 @@ f-ui 是基于vue3.0 的组件库，提供常用组件和公共样式、函数
 推荐使用 `npm` 或 `yarn` 进行安装，它能更好地和 `webpack` 打包工具配合使用。而且可以更好的和 `es6` `typescript` 配合使用。并且支持按需引入
 
 ```shell
-npm i f-ui
+npm i f-ui-one
 # or 
-yarn add f-ui
+yarn add f-ui-one
 # or 
-pnpm add f-ui
+pnpm add f-ui-one
 ```
 
 如果您了解node.js、npm安装，并希望配合webpack使用，请阅读下一节：[快速上手](/#/start)。
