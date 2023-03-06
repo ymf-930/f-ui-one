@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    MIT Licensed | Copyright © 2021-present f-ui
+    MIT Licensed | Copyright © 2023-present f-ui
   </footer>
 </template>
 
