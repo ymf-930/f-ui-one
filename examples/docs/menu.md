@@ -32,7 +32,7 @@
   </f-submenu>
   <f-menu-item index="3" disabled>消息中心</f-menu-item>
   <f-menu-item index="4">
-    <a href="https://wangbin3162.gitee.io/bin-ui-next/" target="_blank">文档外链</a>
+    <a href="https://gitee.com/daijuymf/f-ui/" target="_blank">文档外链</a>
   </f-menu-item>
 </f-menu>
 <f-divider />
@@ -60,7 +60,7 @@
   </f-submenu>
   <f-menu-item index="3" disabled>消息中心</f-menu-item>
   <f-menu-item index="4">
-    <a href="https://wangbin3162.gitee.io/bin-ui-next/" target="_blank">文档外链</a>
+    <a href="https://gitee.com/daijuymf/f-ui/" target="_blank">文档外链</a>
   </f-menu-item>
 </f-menu>
 

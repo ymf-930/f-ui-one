@@ -24,14 +24,14 @@
     <f-button @click="$log.print('danger print','danger',true)" type="danger">danger-back</f-button>
   </div>
   <div class="demo-button">
-    <f-button @click="$log.print({name:'fei-ui',author:'wang bin'})">object - log</f-button>
+    <f-button @click="$log.print({name:'fei-ui',author:'yangmengfei'})">object - log</f-button>
     <f-button @click="$log.pretty('title','pretty print','primary')">pretty - primary</f-button>
     <f-button @click="$log.pretty('title','pretty print','success')">pretty - success</f-button>
     <f-button @click="$log.pretty('title','pretty print','warning')">pretty - warning</f-button>
     <f-button @click="$log.pretty('title','pretty print','danger')">pretty - danger</f-button>
   </div>
   <div class="demo-button">
-    <f-button @click="$log.printVersion('fei-ui-next','1.0.0','https://wangbin3162.gitee.io/bin-ui-next/')">
+    <f-button @click="$log.printVersion('fei-ui-next','1.0.0','https://gitee.com/daijuymf/f-ui/')">
       打印版本号连接
     </f-button>
   </div>

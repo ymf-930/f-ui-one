@@ -1,9 +1,9 @@
 {
-  "name": "f-ui",
-  "version": "1.0.0",
+  "name": "f-ui-one",
+  "version": "1.0.1",
   "keywords": [
     "f-ui",
-    "ui",
+    "f-ui-one",
     "vue",
     "vue3",
     "components"

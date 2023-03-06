@@ -4,7 +4,7 @@ f-ui 是基于vue3.0 的组件库，提供常用组件和公共样式、函数
 
 ## Docs
 
-[document](https://wangbin3162.gitee.io/bin-ui-next/)
+[document](https://gitee.com/daijuymf/f-ui/)
 
 
 ### 特性
