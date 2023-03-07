@@ -20,14 +20,14 @@
           </a>
           <template #dropdown>
             <f-dropdown-menu>
-              <div class="drop-down-menu-group">官方生态</div>
+              <div class="drop-down-menu-group">参考</div>
               <f-dropdown-item name="bin-admin-pro">bin-admin-pro</f-dropdown-item>
+              <f-dropdown-item name="bin-ui">bin-ui(vue2+)</f-dropdown-item>
               <f-dropdown-item name="bin-datav">bin-datav</f-dropdown-item>
               <f-dropdown-item name="bin-editor-next">bin-editor-next</f-dropdown-item>
               <f-dropdown-item name="bin-charts-next">bin-charts-next</f-dropdown-item>
-              <div class="drop-down-menu-group">Vue2组件</div>
-              <f-dropdown-item name="bin-ui">bin-ui(vue2+)</f-dropdown-item>
-              <f-dropdown-item name="bin-admin">bin-admin</f-dropdown-item>
+              <div class="drop-down-menu-group">Vue3组件库</div>
+              <f-dropdown-item name="bin-admin">fei-admin</f-dropdown-item>
               <f-dropdown-item name="bin-tree-org">bin-tree-org</f-dropdown-item>
               <div class="drop-down-menu-group">动画库</div>
               <f-dropdown-item name="bin-animation">bin-animation</f-dropdown-item>
@@ -42,7 +42,7 @@
           target="_blank"
         >国内镜像</a>
         <a
-          href="https://github.com/wangbin3162/bin-ui-next"
+          href="https://github.com/ymf-930/f-ui"
           class="github"
           target="_blank"
         >GitHub</a>
@@ -63,9 +63,9 @@ export default {
       this.$refs.searchRef.handleOpen()
     },
     handleCommand(name) {
-      const githubUrl = `https://github.com/wangbin3162/${name}/`
-      const giteeUrl = `https://gitee.com/wangbin3162/${name}/`
-      const preview = `https://wangbin3162.gitee.io/${name}/`
+      const githubUrl = `https://github.com/ymf-930/${name}/`
+      const giteeUrl = `https://gitee.com/daijuymf/${name}/`
+      const preview = `https://daijuymf.gitee.io/${name}/`
       this.$log.primary(`------------------------------[${name}]-------------------------------`)
       this.$log.primary(`github：  ${githubUrl}`)
       this.$log.primary(`gitee：  ${giteeUrl}`)

@@ -98,7 +98,7 @@
     <p :style="pStyle">个人信息</p>
     <div class="demo-drawer-profile">
       <p flex="box:mean" class="mf-10">
-        <span>名称: wangbin</span><span>手机号: +86 1762516xxxx</span>
+        <span>名称: yangmengfei</span><span>手机号: +86 1875618xxxx</span>
       </p>
       <p flex="box:mean" class="mf-10">
         <span>城市: 徐州市</span><span>区: 鼓楼区</span>
@@ -108,28 +108,28 @@
       </p>
       <p flex="box:mean" class="mf-10">
         个人主页:
-        <a href="https://wangbin3162.gitee.io/wef-doc/guide/" target="_blank">https://wangbin3162.gitee.io/wef-doc/guide/</a>
+        <a href="https://daijuymf.gitee.io/wef-doc/guide/" target="_blank">https://daijuymf.gitee.io/wef-doc/guide/</a>
       </p>
     </div>
     <f-divider></f-divider>
     <p :style="pStyle">公司</p>
     <div class="demo-drawer-profile">
       <p flex="box:mean" class="mf-10">
-        <span>名称: xxxx有限公司</span><span>手机号: +86 1762516xxxx</span>
+        <span>名称: xxxx有限公司</span><span>手机号: +86 1875618xxxx</span>
       </p>
       <p flex="box:mean" class="mf-10">
-        <span>地址: 徐州市xx区xx街道88号</span><span>电话: +86 1762516xxxx</span>
+        <span>地址: 徐州市xx区xx街道88号</span><span>电话: +86 1875618xxxx</span>
       </p>
     </div>
     <f-divider></f-divider>
     <p :style="pStyle">联系我们</p>
     <div class="demo-drawer-profile">
       <p flex="box:mean" class="mf-10">
-        <span>Email: 316281400@qq.com</span><span>手机号: +86 1762516xxxx</span>
+        <span>Email: 316281400@qq.com</span><span>手机号: +86 1875618xxxx</span>
       </p>
       <p class="mf-10">
-        GitHub: <a href="https://github.com/wangbin3162/bin-ui"
-                   target="_blank">https://github.com/wangbin3162/bin-ui-next</a>
+        GitHub: <a href="https://github.com/ymf-930/f-ui"
+                   target="_blank">https://github.com/ymf-930/f-ui</a>
       </p>
     </div>
   </f-drawer>

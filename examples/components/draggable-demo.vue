@@ -20,14 +20,14 @@
     <p>list2: {{ list2.map(i => i.id) }}</p>
     <br/>
     <div>
-      <a href="https://gitee.com/wangbin3162/fei-ui/blob/master/examples/components/draggable-demo.vue"
+      <a href="https://gitee.com/daijuymf/fei-ui/blob/master/examples/components/draggable-demo.vue"
          target="_blank">示例代码</a>
     </div>
   </div>
 </template>
 
 <script>
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import { useSortable } from '../../src/hooks'
 
 export default {

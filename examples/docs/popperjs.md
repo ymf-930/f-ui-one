@@ -95,7 +95,7 @@ popper借助了第三方插件<a href="https://popper.js.org/" target="_blank">p
 ### 图标选择器
 
 可以参考图标选择器，来实现类似的业务功能，并可以扩展实现表单的校验逻辑，
-<a href="https://github.com/wangbin3162/bin-ui-next/blob/master/src/components/icon-select/icon-select.vue" target="_blank">
+<a href="https://github.com/daijuymg/f-ui/blob/master/src/components/icon-select/icon-select.vue" target="_blank">
 icon-select
 </a>
 
