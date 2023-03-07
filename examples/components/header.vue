@@ -5,7 +5,7 @@
         <div class="logo">
           <img src='../assets/images/logo/f-ui-logo.svg' class="icon" alt="icon"/>
           <div class="text">
-            <img src="../assets/images/f-ui-text.svg" alt="text"/>
+            <img src="../assets/images/f-ui-one-text.svg" alt="text"/>
           </div>
         </div>
       </div>
