@@ -64,7 +64,7 @@ function mergeConfig(baseConfig, configB) {
 }
 
 function createFileName(formatName) {
-  return `lib/f-ui${formatName}.js`
+  return `lib/f-ui-one${formatName}.js`
 }
 
 // es-bundle

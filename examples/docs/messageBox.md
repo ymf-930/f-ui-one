@@ -145,7 +145,7 @@ MessageBox。调用参数为：
 
 如果单独引入 MessageBox：
 
-    import { MessageBox } from 'f-ui';
+    import { MessageBox } from 'f-ui-one';
 
 ### Options
 

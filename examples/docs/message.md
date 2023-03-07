@@ -82,7 +82,7 @@ this.$message.error(options)
 在vue3中你也可以手动引入并使用
 
 ```javascript
-import { Message } from 'f-ui'
+import { Message } from 'f-ui-one'
 
 Message(options)
 Message.info(options)

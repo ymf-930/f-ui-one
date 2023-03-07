@@ -31,7 +31,7 @@
     <f-button @click="$log.pretty('title','pretty print','danger')">pretty - danger</f-button>
   </div>
   <div class="demo-button">
-    <f-button @click="$log.printVersion('fei-ui-next','1.0.0','https://gitee.com/daijuymf/f-ui/')">
+    <f-button @click="$log.printVersion('f-ui-one','1.0.2','https://gitee.com/daijuymf/f-ui-one/')">
       打印版本号连接
     </f-button>
   </div>

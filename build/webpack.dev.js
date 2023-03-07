@@ -73,7 +73,7 @@ const config = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       vue: 'vue',
-      'f-ui': '../src/index.js',
+      'f-ui-one': '../src/index.js',
       examples: path.resolve(__dirname),
     },
   },

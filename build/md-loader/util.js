@@ -65,7 +65,7 @@ function genInlineComponentText(template, script) {
     script = script
       .replace(/export\s+default/, 'const democomponentExport =')
       .replace(/import ({.*}) from 'vue'/g, (s, s1) => `const ${s1} = Vue`)
-      .replace(/import ({.*}) from 'f-ui'/g, (s, s1) => `const ${s1} = require('f-ui')`)
+      .replace(/import ({.*}) from 'f-ui-one'/g, (s, s1) => `const ${s1} = require('f-ui-one')`)
   } else {
     script = 'const democomponentExport = {}'
   }

@@ -1,7 +1,7 @@
 <template>
   <div class="color-pain">
     <h3 id="gai-shu">概述</h3>
-    <p>F-UI 默认具有一套较为美观的配色方案，在开发中也推荐使用一下色板来达到视觉统一效果</p>
+    <p>F-UI-ONE 默认具有一套较为美观的配色方案，在开发中也推荐使用一下色板来达到视觉统一效果</p>
     <p>默认的色彩样式有5个主色调，并根据白色混入得到了若干个色板值，这些颜色基本可以满足中后台设计中对于颜色的要求</p>
     <p>颜色值的取值混合主要参考stylus的mix混合，js部分借助
       <a href="https://www.npmjs.com/package/color" target="_blank">color</a>

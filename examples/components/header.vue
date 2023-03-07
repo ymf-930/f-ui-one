@@ -37,12 +37,12 @@
         </f-dropdown>
         <router-link :to="{ name: 'color' }" class="active">色彩设计</router-link>
         <a
-          href="https://gitee.com/daijuymf/f-ui"
+          href="https://gitee.com/daijuymf/f-ui-one"
           class="github"
           target="_blank"
         >国内镜像</a>
         <a
-          href="https://github.com/ymf-930/f-ui"
+          href="https://github.com/ymf-930/f-ui-one"
           class="github"
           target="_blank"
         >GitHub</a>

@@ -28,8 +28,8 @@ module.exports = {
         [
           'babel-plugin-module-resolver',
           {
-            root: ['f-ui'],
-            alias: { 'f-ui/src': 'f-ui/lib' },
+            root: ['f-ui-one'],
+            alias: { 'f-ui-one/src': 'f-ui-one/lib' },
           },
         ],
       ],

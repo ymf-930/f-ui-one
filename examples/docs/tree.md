@@ -744,7 +744,7 @@ expand、selected、checked 和 disabled 可以设置展开，选中，勾选和
       }
 
       function renderContent1({ root, node, data }) {
-        // 实际使用时，在最上方导入 import { FDropdown, FDropdownMenu, FDropdownItem } from 'f-ui' 即可
+        // 实际使用时，在最上方导入 import { FDropdown, FDropdownMenu, FDropdownItem } from 'f-ui-one' 即可
         const { FDropdown, FDropdownMenu, FDropdownItem } = this.FUINext
         const iconMap = {
           root: '',
@@ -865,7 +865,7 @@ expand、selected、checked 和 disabled 可以设置展开，选中，勾选和
 </template>
 <script>
   import { h } from 'vue'
-  // import { FDropdown, FDropdownMenu, FDropdownItem } from 'f-ui'
+  // import { FDropdown, FDropdownMenu, FDropdownItem } from 'f-ui-one'
 
   export default {
     data() {
@@ -960,7 +960,7 @@ expand、selected、checked 和 disabled 可以设置展开，选中，勾选和
         parent.children.splice(index, 1)
       },
       renderContent1({ root, node, data }) {
-        // 实际使用时，在最上方导入 import { FDropdown, FDropdownMenu, FDropdownItem } from 'f-ui' 即可
+        // 实际使用时，在最上方导入 import { FDropdown, FDropdownMenu, FDropdownItem } from 'f-ui-one' 即可
         const { FDropdown, FDropdownMenu, FDropdownItem } = this.FUINext
         const inline = [
           h(

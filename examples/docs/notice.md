@@ -166,7 +166,7 @@ this.$notice.error(options)
 在vue3中你也可以手动引入并使用
 
 ```javascript
-import { Notice } from 'f-ui'
+import { Notice } from 'f-ui-one'
 
 Notice(options)
 Notice.info(options)

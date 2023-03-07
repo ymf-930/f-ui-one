@@ -14,7 +14,7 @@
   <f-timeline>
     <f-timeline-item>
       <p class="time">2019年4月12日</p>
-      <p class="content">初始化f-ui</p>
+      <p class="content">初始化f-ui-one</p>
     </f-timeline-item>
     <f-timeline-item>
       <p class="time">2019年4月21日</p>

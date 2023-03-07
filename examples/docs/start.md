@@ -1,10 +1,10 @@
 ## 快速上手
 
-本章节介绍如何在项目中使用vue3版本的f-ui
+本章节介绍如何在项目中使用vue3版本的f-ui-one
 
 ### 引入
 
-你可以引入整个 f-ui，或是根据需要仅引入部分组件。我们先介绍如何引入完整的 f-ui。
+你可以引入整个 f-ui-one，或是根据需要仅引入部分组件。我们先介绍如何引入完整的 f-ui-one。
 
 #### 完整引入
 
@@ -12,9 +12,9 @@
 
 ```javascript
 import { createApp } from 'vue'
-import FUI from 'f-ui'
+import FUI from 'f-ui-one'
 import App from './App.vue'
-import 'f-ui/lib/styles/index.css'
+import 'f-ui-one/lib/styles/index.css'
 
 const app = createApp(App)
 app.use(FUI)
@@ -22,7 +22,7 @@ app.use(FUI)
 app.mount('#app')
 ```
 
-以上代码便完成了 f-ui 的引入。需要注意的是，样式文件需要单独引入。
+以上代码便完成了 f-ui-one 的引入。需要注意的是，样式文件需要单独引入。
 
 #### 按需引入
 
@@ -43,7 +43,7 @@ module.exports = {
   ],
   plugins: [
     ["import", {
-      "libraryName": "f-ui",
+      "libraryName": "f-ui-one",
       "libraryDirectory": "src/components"
     }]
   ]
@@ -54,15 +54,15 @@ module.exports = {
 
 ```javascript
 import { createApp } from 'vue'
-import { FButton } from 'f-ui'
+import { FButton } from 'f-ui-one'
 import App from './App.vue'
-import 'f-ui/lib/styles/components/button.css'
+import 'f-ui-one/lib/styles/components/button.css'
 
 const app = createApp(App)
 app.use(FButton)
 app.mount('#app')
 ```
 
-**特别提醒:按需引用仍然需要导入样式，即在 main.js 或根组件 import 'f-ui/lib/styles/index.css';**
+**特别提醒:按需引用仍然需要导入样式，即在 main.js 或根组件 import 'f-ui-one/lib/styles/index.css';**
 
 完整组件列表参考源代码

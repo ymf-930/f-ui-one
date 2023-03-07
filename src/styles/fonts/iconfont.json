@@ -1,9 +1,9 @@
 {
   "id": "3935087",
-  "name": "F-UI",
+  "name": "F-UI-ONE",
   "font_family": "f-iconfont",
   "css_prefix_text": "f-icon-",
-  "description": "F-UI组件库图标",
+  "description": "F-UI-ONE组件库图标",
   "glyphs": [
     {
       "icon_id": "29391928",

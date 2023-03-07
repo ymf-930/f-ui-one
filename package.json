@@ -13,11 +13,11 @@
     "lib",
     "src"
   ],
-  "main": "lib/f-ui.common.js",
-  "module": "lib/f-ui.esm.js",
-  "unpkg": "lib/f-ui.js",
+  "main": "lib/f-ui-one.common.js",
+  "module": "lib/f-ui-one.esm.js",
+  "unpkg": "lib/f-ui-one.js",
   "style": "lib/styles/index.css",
-  "homepage": "https://gitee.com/daijuymf/f-ui/",
+  "homepage": "https://gitee.com/daijuymf/f-ui-one/",
   "private": false,
   "license": "MIT",
   "scripts": {

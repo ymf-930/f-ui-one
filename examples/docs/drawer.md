@@ -128,8 +128,8 @@
         <span>Email: 316281400@qq.com</span><span>手机号: +86 1875618xxxx</span>
       </p>
       <p class="mf-10">
-        GitHub: <a href="https://github.com/ymf-930/f-ui"
-                   target="_blank">https://github.com/ymf-930/f-ui</a>
+        GitHub: <a href="https://github.com/ymf-930/f-ui-one"
+                   target="_blank">https://github.com/ymf-930/f-ui-one</a>
       </p>
     </div>
   </f-drawer>
