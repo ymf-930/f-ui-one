@@ -7,7 +7,7 @@
     :aria-expanded="inExpandingPath"
     :tabindex="expandable ? -1 : null"
     :class="[
-      'bin-cascader-node',
+      'fei-cascader-node',
       checkStrictly && 'is-selectable',
       inExpandingPath && 'in-active-path',
       inCheckedPath && 'in-checked-path',

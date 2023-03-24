@@ -53,7 +53,7 @@ popper借助了第三方插件<a href="https://popper.js.org/" target="_blank">p
           :offset="4"
           placement="bottom-start"
           transition="zoom-in-top"
-          popper-class="bin-select__popper"
+          popper-class="fei-select__popper"
           :gpu-acceleration="false"
       >
         <template #default>

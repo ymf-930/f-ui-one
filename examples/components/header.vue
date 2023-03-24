@@ -21,17 +21,15 @@
           <template #dropdown>
             <f-dropdown-menu>
               <div class="drop-down-menu-group">参考</div>
-              <f-dropdown-item name="bin-admin-pro">bin-admin-pro</f-dropdown-item>
-              <f-dropdown-item name="bin-ui">bin-ui(vue2+)</f-dropdown-item>
-              <f-dropdown-item name="bin-datav">bin-datav</f-dropdown-item>
-              <f-dropdown-item name="bin-editor-next">bin-editor-next</f-dropdown-item>
-              <f-dropdown-item name="bin-charts-next">bin-charts-next</f-dropdown-item>
+              <f-dropdown-item name="fei-admin">fei-admin</f-dropdown-item>
+              <f-dropdown-item name="fei-datav">fei-datav</f-dropdown-item>
+              <f-dropdown-item name="fei-editor">fei-editor</f-dropdown-item>
+              <f-dropdown-item name="fei-charts">fei-charts</f-dropdown-item>
               <div class="drop-down-menu-group">Vue3组件库</div>
-              <f-dropdown-item name="bin-admin">fei-admin</f-dropdown-item>
-              <f-dropdown-item name="bin-tree-org">bin-tree-org</f-dropdown-item>
+              <f-dropdown-item name="fei-tree-org">fei-tree-org</f-dropdown-item>
               <div class="drop-down-menu-group">动画库</div>
-              <f-dropdown-item name="bin-animation">bin-animation</f-dropdown-item>
-              <f-dropdown-item name="bin-keyframe-animation">bin-keyframe-animation</f-dropdown-item>
+              <f-dropdown-item name="fei-animation">fei-animation</f-dropdown-item>
+              <f-dropdown-item name="fei-keyframe-animation">fei-keyframe-animation</f-dropdown-item>
             </f-dropdown-menu>
           </template>
         </f-dropdown>
