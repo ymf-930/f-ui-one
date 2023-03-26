@@ -20,7 +20,7 @@
     <p>list2: {{ list2.map(i => i.id) }}</p>
     <br/>
     <div>
-      <a href="https://gitee.com/daijuymf/fei-ui/blob/master/examples/components/draggable-demo.vue"
+      <a href="https://gitee.com/ymf930/fei-ui/blob/master/examples/components/draggable-demo.vue"
          target="_blank">示例代码</a>
     </div>
   </div>

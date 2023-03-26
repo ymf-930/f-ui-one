@@ -4,7 +4,7 @@ f-ui-one 是基于vue3.0 的组件库，提供常用组件和公共样式、函�
 
 ## Docs
 
-[document](https://gitee.com/daijuymf/f-ui-one/)
+[document](https://gitee.com/ymf930/f-ui-one/)
 
 
 ### 特性

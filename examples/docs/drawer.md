@@ -108,7 +108,7 @@
       </p>
       <p flex="box:mean" class="mf-10">
         个人主页:
-        <a href="https://daijuymf.gitee.io/wef-doc/guide/" target="_blank">https://daijuymf.gitee.io/wef-doc/guide/</a>
+        <a href="https://ymf930.gitee.io/wef-doc/guide/" target="_blank">https://ymf930.gitee.io/wef-doc/guide/</a>
       </p>
     </div>
     <f-divider></f-divider>
