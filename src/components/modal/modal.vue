@@ -6,7 +6,7 @@
       @after-leave="afterLeave"
       @before-leave="beforeLeave"
     >
-      <b-mask
+      <f-mask
         v-show="visible"
         :mask="mask"
         :overlay-class="maskClass"
@@ -50,7 +50,7 @@
             </div>
           </div>
         </transition>
-      </b-mask>
+      </f-mask>
     </transition>
   </teleport>
 </template>
@@ -65,7 +65,7 @@ import {
   OPENED_EVENT,
   UPDATE_MODEL_EVENT,
 } from './useModal'
-import BMask from './mask.vue'
+import FMask from './mask.vue'
 import { useModalDrag } from '../../hooks'
 import { addEventListenerWrap } from './addListener'
 import { transferIncrease } from '../../utils/config'
@@ -123,7 +123,7 @@ function offset(el) {
 
 export default {
   name: 'FModal',
-  components: { BMask },
+  components: { FMask },
   props: {
     appendToBody: {
       type: Boolean,

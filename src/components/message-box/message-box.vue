@@ -1,6 +1,6 @@
 <template>
   <transition name="modal-fade" @after-leave="$emit('vanish')">
-    <b-mask
+    <f-mask
       v-show="visible"
       :z-index="state.zIndex"
       :mask-class="['is-message-box', modalClass]"
@@ -55,7 +55,7 @@
           </div>
         </div>
       </transition>
-    </b-mask>
+    </f-mask>
   </transition>
 </template>
 
@@ -70,7 +70,7 @@ import {
   ref,
 } from 'vue'
 import FButton from '../button'
-import BMask from '../modal/mask.vue'
+import FMask from '../modal/mask.vue'
 import { useModal, useLockScreen, useRestoreActive } from '../../hooks'
 import { transferIncrease } from '../../utils/config'
 import { on, off } from '../../utils/dom'
@@ -135,9 +135,9 @@ const TypeMap = {
 }
 
 export default {
-  name: 'BMessageBox',
+  name: 'FMessageBox',
   components: {
-    BMask,
+    FMask,
     FButton,
   },
   props: {

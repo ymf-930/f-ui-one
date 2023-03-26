@@ -16,12 +16,12 @@ export function copy(content) {
   return new Promise(resolve => {
     const copyInput = document.createElement('textarea')
     copyInput.value = content
-    copyInput.setAttribute('id', 'b-copy-temp')
+    copyInput.setAttribute('id', 'f-copy-temp')
     document.body.appendChild(copyInput)
     copyInput.select() // 选择对象
     const result = document.execCommand('Copy') // 执行浏览器复制命令
     copyInput.style.display = 'none'
-    document.body.removeChild(document.getElementById('b-copy-temp'))
+    document.body.removeChild(document.getElementById('f-copy-temp'))
     resolve(result)
   })
 }
@@ -37,10 +37,10 @@ export function open(url, target = false) {
   if (target) {
     a.setAttribute('target', '_blank')
   }
-  a.setAttribute('id', 'b-link-temp')
+  a.setAttribute('id', 'f-link-temp')
   document.body.appendChild(a)
   a.click()
-  document.body.removeChild(document.getElementById('b-link-temp'))
+  document.body.removeChild(document.getElementById('f-link-temp'))
 }
 
 /**

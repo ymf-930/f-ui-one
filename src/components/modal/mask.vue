@@ -14,7 +14,7 @@
 <script>
 
 export default {
-  name: 'BMask',
+  name: 'FMask',
   props: {
     mask: {
       type: Boolean,
