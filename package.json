@@ -1,6 +1,6 @@
 {
   "name": "f-ui-one",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "keywords": [
     "f-ui",
     "f-ui-one",
@@ -20,6 +20,10 @@
   "homepage": "https://gitee.com/ymf930/f-ui-one/",
   "private": false,
   "license": "MIT",
+  "publicConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "dev": "webpack server --config build/webpack.dev.js",
     "build:demo": "rimraf docs && cross-env NODE_ENV=production webpack --config build/webpack.dev.js",
@@ -41,7 +45,7 @@
     "sortablejs": "^1.15.0"
   },
   "peerDependencies": {
-    "vue": "^3.2.0"
+    "vue": "^3.2.8"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
