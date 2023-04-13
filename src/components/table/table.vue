@@ -1000,6 +1000,7 @@ export default {
       getSelection,
       toggleSelect,
       toggleExpand,
+      handleResize
     }
   },
 }

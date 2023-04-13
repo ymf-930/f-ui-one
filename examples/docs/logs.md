@@ -4,6 +4,12 @@
 
 <div class="doc-update">
     <f-timeline>
+     <f-timeline-item>
+        <p class="version">1.0.2~1.0.5</p>
+        <p class="time">2023-04-13</p>
+        <p class="content"><i>🍀</i>升级vue依赖</p>
+        <p class="content"><i>🍀</i>更新部分导出文件</p>
+      </f-timeline-item>
       <f-timeline-item>
         <p class="version">1.0.1</p>
         <p class="time">2023-03-06</p>
