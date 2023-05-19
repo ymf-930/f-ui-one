@@ -20,7 +20,7 @@ f-ui-one 是基于vue3.0 的组件库，提供常用组件和公共样式、函�
 
 ### 版本
 
-[![NPM version](https://img.shields.io/badge/npm-v1.0.4-blue)](https://www.npmjs.com/package/f-ui-one)
+[![NPM version](https://img.shields.io/badge/npm-v1.0.5-blue)](https://www.npmjs.com/package/f-ui-one)
 
 ### 相关链接
 
