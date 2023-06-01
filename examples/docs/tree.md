@@ -1054,9 +1054,9 @@ expand、selected、checked 和 disabled 可以设置展开，选中，勾选和
   <div class="pt-8 pf-8">
     <f-button @click="clear">清空选择</f-button>
   </div>
-  <div>{{ currentId }}</div>
-  <div>{{ currentNode }}</div>
-  <div>{{ checked }}</div>
+  <div>currentId：{{ currentId }}</div>
+  <div>currentNode：{{ currentNode }}</div>
+  <div>checked：{{ checked }}</div>
 </template>
 <script>
   export default {
@@ -1140,7 +1140,7 @@ expand、selected、checked 和 disabled 可以设置展开，选中，勾选和
             ],
           },
         ],
-        currentId: '',
+        currentId: '00102',
         currentNode: {},
         checked: [],
       }
@@ -1150,7 +1150,6 @@ expand、selected、checked 和 disabled 可以设置展开，选中，勾选和
         this.currentId = '00102'
       },
       handleChange(val, node) {
-        console.log(val, node)
         this.currentNode = node ? { id: node.id, text: node.text } : {}
       },
       setChecked() {
@@ -1161,6 +1160,150 @@ expand、selected、checked 和 disabled 可以设置展开，选中，勾选和
         this.currentNode = {}
         this.checked = []
       },
+    },
+  }
+</script>
+```
+
+:::
+
+### 树校验
+
+可以结合form表单进行校验提示。
+
+::: demo
+
+```html
+<template>
+  <div flex>
+      <f-form :model="obj" ref="ruleForm"  label-width="85px" :rules="ruleValidate">
+          <f-form-item prop="currentId" label="树结构">
+            <f-tree-select
+              style="width: 300px;"
+              :data="data"
+              v-model="obj.currentId"
+              titleKey="text"
+              clearable
+              @change="handleChange"
+            ></f-tree-select>
+          </f-form-item>
+          <f-form-item>
+            <f-button type="primary" @click="submitForm('ruleForm')">提交</f-button>
+            <f-button @click="resetForm('ruleForm')">重置</f-button>
+          </f-form-item>
+    </f-form>
+  </div>  
+  <div>currentId：{{ obj.currentId }}</div>
+  <div>currentNode：{{ currentNode }}</div>
+</template>
+<script>
+  export default {
+    data() {
+      return {
+        data: [
+          {
+            id: '001',
+            text: '研发部',
+            deptCode: 'yfb',
+            status: '1',
+            desc: '研发中心',
+            parentId: null,
+            children: [
+              {
+                id: '00101',
+                text: '后端组',
+                deptCode: 'hd',
+                status: '1',
+                desc: '后端研发中心',
+                parentId: '001',
+              },
+              {
+                id: '00102',
+                text: '前端组',
+                deptCode: 'qd',
+                status: '1',
+                desc: '前端研发中心',
+                parentId: '001',
+              },
+              {
+                id: '00103',
+                text: 'UI设计',
+                deptCode: 'sj',
+                status: '1',
+                desc: '交互、ui设计中心',
+                parentId: '001',
+              },
+              {
+                id: '00104',
+                text: '测试组',
+                deptCode: 'cs',
+                status: '1',
+                desc: '测试组',
+                parentId: '001',
+              },
+              {
+                id: '00105',
+                text: '运维组',
+                deptCode: 'yw',
+                status: '1',
+                desc: '运维、服务、巡检',
+                parentId: '001',
+              },
+            ],
+          },
+          {
+            id: '002',
+            text: '项目部',
+            deptCode: 'xmb',
+            status: '1',
+            desc: '项目服务部',
+            parentId: null,
+            children: [
+              {
+                id: '00201',
+                text: '开发组',
+                deptCode: 'kf',
+                status: '1',
+                desc: '后端项目开发',
+                parentId: '002',
+              },
+              {
+                id: '00202',
+                text: '交付服务组',
+                deptCode: 'jf',
+                status: '1',
+                desc: '交付项目，技术服务支持',
+                parentId: '002',
+              },
+            ],
+          },
+        ],
+        obj: {
+          currentId: '00102',
+        },
+        currentNode: {},
+        ruleValidate: {
+          currentId: [{ required: true, message: '树不能为空', trigger: 'change' }],
+        }
+      }
+    },
+    methods: {
+      handleChange(val, node) {
+        this.currentNode = node ? { id: node.id, text: node.text } : {}
+      },
+      submitForm(formName) {
+        this.$refs[formName].validate((valid) => {
+          if (valid) {
+            alert('submit!');
+          } else {
+            console.log('error submit!!');
+            return false;
+          }
+        });
+      },
+      resetForm(formName) {
+        this.$refs[formName].resetFields();
+      }
     },
   }
 </script>

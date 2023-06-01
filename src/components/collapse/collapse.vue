@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import {  onUnmounted, provide, ref, watch} from 'vue'
+import { onUnmounted, provide, ref, watch } from 'vue'
 
 import mitt from 'mitt'
 import { UPDATE_MODEL_EVENT, CHANGE_EVENT } from '../../utils/constants'

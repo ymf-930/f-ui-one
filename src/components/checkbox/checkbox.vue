@@ -35,7 +35,7 @@
         @change="handleChange"
         @focus="focus = true"
         @blur="focus = false"
-      >
+      />
       <input
         v-else
         v-model="model"
@@ -48,7 +48,7 @@
         @change="handleChange"
         @focus="focus = true"
         @blur="focus = false"
-      >
+      />
     </span>
     <span v-if="$slots.default || label" class="fei-checkbox__label">
       <slot></slot>

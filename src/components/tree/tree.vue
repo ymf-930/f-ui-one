@@ -36,7 +36,6 @@
 import TreeNode from './node.vue'
 import FEmpty from '../empty'
 import { provide, reactive, ref, toRefs, watch } from 'vue'
-import expand from '../table/main/expand'
 import { addClass, removeClass } from '../../utils/dom'
 import { deepCopy } from '../../utils/util'
 
@@ -228,7 +227,12 @@ export default {
         handleCheck({ checked: flag, nodeKey })
       })
     }
-
+    /**
+     * 设置选择
+     * @param {*} keys 选择的nodeKey
+     * @param {*} flag 选中或者未选中
+     * @param {*} expandParent 是否需要打开选择的祖先层级
+     */
     function setSelected(keys, flag = true, expandParent = true) {
       keys.forEach(nodeKey => {
         handleSelect(nodeKey, flag)
@@ -342,13 +346,17 @@ export default {
       })
     }
 
+    let currentSelectedKey
+    /**
+     * 节点选择事件
+     * @param {*} nodeKey 选中的nodeKey
+     * @param {*} flag 选中值
+     */
     function handleSelect(nodeKey, flag) {
-      if (props.lockSelect) { // 如果锁定选择，则不触发选中事件
-        return
-      }
+      if (props.lockSelect) return // 如果锁定选择，则不触发选中事件
       const node = states.flatState[nodeKey].node
       if (!props.multiple) { // reset previously selected node
-        const currentSelectedKey = states.flatState.findIndex(obj => obj.node.selected)
+        currentSelectedKey = states.flatState.findIndex(obj => obj.node.selected)
         if (currentSelectedKey >= 0 && currentSelectedKey !== nodeKey) {
           states.flatState[currentSelectedKey].node['selected'] = false
         }

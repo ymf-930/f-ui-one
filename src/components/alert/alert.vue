@@ -23,10 +23,10 @@ import { computed, onMounted, ref } from 'vue'
 const prefixCls = 'fei-alert'
 
 const TYPE_CLASSES_MAP = {
-  'info': 'info-circle',
-  'success': 'check-circle',
-  'warning': 'warning-circle',
-  'error': 'error',
+  info: 'info-circle',
+  success: 'check-circle',
+  warning: 'warning-circle',
+  error: 'error',
 }
 
 export default {

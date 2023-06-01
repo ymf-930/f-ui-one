@@ -84,7 +84,7 @@ export default {
     const tableRows = ref([[], [], [], [], [], []])
 
     // todo better way to get Day.js locale object
-    const firstDayOfWeek =  1
+    const firstDayOfWeek = 1
     const WEEKS_CONSTANT = props.date.locale('en').localeData().weekdaysShort().map(_ => _.toLowerCase())
 
     const offsetDay = computed(() => {
@@ -224,11 +224,7 @@ export default {
 
     const cellMatchesDate = (cell, date) => {
       if (!date) return false
-      return dayjs(date)
-        .isSame(
-          props.date.date(Number(cell.text))
-          , 'day',
-        )
+      return dayjs(date).isSame(props.date.date(Number(cell.text)), 'day')
     }
 
     const getCellClasses = cell => {
@@ -373,7 +369,7 @@ export default {
       newDate = newDate.date(parseInt(cell.text, 10))
 
       if (props.parsedValue && !Array.isArray(props.parsedValue)) {
-        const dayOffset = (props.parsedValue.day() - firstDayOfWeek + 7) % 7 - 1
+        const dayOffset = ((props.parsedValue.day() - firstDayOfWeek + 7) % 7) - 1
         const weekDate = props.parsedValue.subtract(dayOffset, 'day')
         return weekDate.isSame(newDate, 'day')
       }

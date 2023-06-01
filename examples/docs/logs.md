@@ -4,6 +4,12 @@
 
 <div class="doc-update">
     <f-timeline>
+      <f-timeline-item>
+        <p class="version">1.0.6</p>
+        <p class="time">2023-06-01</p>
+        <p class="content"><i>🍀</i>修复tree-select 树形选择在表单校验时会默认触发change事件的问题。</p>
+        <p class="content"><i>🍀</i>更新部分导出文件</p>
+      </f-timeline-item>
      <f-timeline-item>
         <p class="version">1.0.2~1.0.5</p>
         <p class="time">2023-04-13</p>

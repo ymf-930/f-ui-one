@@ -1,13 +1,13 @@
 <template>
   <table class="fei-month-table" @click="handleMonthTableClick" @mousemove="handleMouseMove">
     <tbody>
-    <tr v-for="(row, key) in rows" :key="key">
-      <td v-for="(cell, key_) in row" :key="key_" :class="getCellStyle(cell)">
-        <div>
-          <a class="cell">{{ monthMap[months[cell.text]] }}</a>
-        </div>
-      </td>
-    </tr>
+      <tr v-for="(row, key) in rows" :key="key">
+        <td v-for="(cell, key_) in row" :key="key_" :class="getCellStyle(cell)">
+          <div>
+            <a class="cell">{{ monthMap[months[cell.text]] }}</a>
+          </div>
+        </td>
+      </tr>
     </tbody>
   </table>
 </template>

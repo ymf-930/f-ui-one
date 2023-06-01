@@ -176,7 +176,7 @@ export default {
     const { FForm, formEmit } = useForm()
 
     function handleSelect(selected, node, flatState) {
-      node.selected = true
+      // node.selected = true
       changeValue(node)
       visible.value = false
     }
@@ -218,25 +218,37 @@ export default {
       formEmit('change', value)
     }
 
-    watch(() => props.modelValue, (val) => {
-      if (val) {
-        nextTick(() => {
-          // 获取全部拍平节点
-          const flatState = treeRef.value.getFlatState()
-          const matchItem = flatState.find(item => item.node[props.valueKey] === val)
-          if (matchItem) {
-            treeRef.value.setSelected([matchItem.nodeKey])
-            // changeValue(matchItem.node)
-          } else {
-            throwWarn('FTreeSelect', ' There is no such data in the tree structure!')
-          }
-        })
-      } else {
-        nextTick(() => {
-          handleClearClick()
-        })
+    // 设置默认行为
+    function setNormalSelected(showError = true) {
+      nextTick(() => {
+        // 获取全部拍平节点
+        const flatState = treeRef.value.getFlatState()
+        const matchItem = flatState.find(item => item.node[props.valueKey] === props.modelValue)
+        if (matchItem) {
+          treeRef.value.setSelected([matchItem.nodeKey])
+          // changeValue(matchItem.node)
+        } else {
+          if (showError) console.error(' There is no such data in the tree structure!')
+        }
+      })
+    }
+
+    // 默认执行一次初始化数据
+    setNormalSelected(false)
+
+    watch(
+      () => props.modelValue,
+      val => {
+        if (val) {
+          setNormalSelected()
+        } else {
+          nextTick(() => {
+            handleClearClick()
+          })
       }
-    }, { deep: true, immediate: true })
+    },
+      { deep: true }
+    )
 
     watch(() => props.checked, (val) => {
       nextTick(() => {
