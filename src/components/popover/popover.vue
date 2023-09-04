@@ -43,6 +43,10 @@ export default {
       type: [String, Number],
       default: 150,
     },
+    zIndex: {
+      type: Number,
+      default: 0,
+    },
   },
   emits: ['update:visible', 'after-enter', 'after-leave', SHOW_EVENT, HIDE_EVENT],
   setup(props, ctx) {

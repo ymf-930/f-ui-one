@@ -32,7 +32,7 @@
         <table cellspacing="0" cellpadding="0" border="0">
           <tbody>
           <tr>
-            <td :style="{'height':bodyStyle.height,'width':`${headerWidth}px`}">
+            <td :style="{ height:bodyStyle.height, width:`${headerWidth}px` }">
               <f-empty v-if="!data || data.length === 0">{{ noDataText }}</f-empty>
             </td>
           </tr>

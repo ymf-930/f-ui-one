@@ -161,7 +161,7 @@ export default function (props, ctx) {
 
   function onVisibilityChange(toState) {
     if (toState) {
-      popperStyle.value.zIndex = transferIncrease()
+      popperStyle.value.zIndex = transferIncrease() + props.zIndex
       initializePopper()
     }
   }

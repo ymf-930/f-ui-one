@@ -38,13 +38,14 @@ export default (trigger) => {
       const bodyHasOverflow =
         document.documentElement.clientHeight < document.body.scrollHeight
       const bodyOverflowY = getStyle(document.body, 'overflowY')
+      addClass(document.body, 'fei-popup-parent--hidden')
       if (
         scrollBarWidth > 0 &&
         (bodyHasOverflow || bodyOverflowY === 'scroll') &&
         withoutHiddenClass
       ) {
-        document.body.style.paddingRight =
-          computedBodyPaddingRight + scrollBarWidth + 'px'
+        document.body.style.paddingRight = computedBodyPaddingRight + scrollBarWidth + 'px'
+        addClass(document.body, 'with-scrollbar')
       }
       addClass(document.body, 'fei-popup-parent--hidden')
     } else {
@@ -52,6 +53,7 @@ export default (trigger) => {
         if (withoutHiddenClass) {
           document.body.style.paddingRight = bodyPaddingRight
           removeClass(document.body, 'fei-popup-parent--hidden')
+          removeClass(document.body, 'with-scrollbar')
         }
         withoutHiddenClass = true
       }, 300)

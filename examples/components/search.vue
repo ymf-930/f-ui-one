@@ -33,8 +33,7 @@
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 import navConf from '../nav.config.json'
 import { useRoute, useRouter } from 'vue-router'
-import { on, off } from '../../src/utils/dom'
-
+import { on, off, addClass, removeClass} from '../../src/utils/dom'
 export default {
   name: 'Search',
   setup() {
@@ -99,12 +98,14 @@ export default {
     }
 
     function hideScroll() {
-      document.body.classList.add('fei-popup-parent--hidden')
+      addClass(document.body, 'fei-popup-parent--hidden')
+      addClass(document.body, 'with-scrollbar')
     }
 
     function showScroll() {
       query.value = ''
-      document.body.classList.remove('fei-popup-parent--hidden')
+      removeClass(document.body, 'fei-popup-parent--hidden')
+      removeClass(document.body, 'with-scrollbar')
     }
 
 

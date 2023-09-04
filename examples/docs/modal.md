@@ -12,7 +12,7 @@
 <template>
   <f-button type="primary" @click="visible = true">Open</f-button>
   <f-button type="primary" @click="confirm = true">Confirm</f-button>
-  <f-modal v-model="visible" title="普通的模态框标题">
+  <f-modal v-model="visible" title="普通的模态框标题" :z-index="1000">
     <p>我是弹窗内容...</p>
     <p>我是弹窗内容...</p>
     <p>我是弹窗内容...</p>
@@ -337,7 +337,7 @@ Modal 组件提供了灵活的自定义样式 API 和 Slot，可以自由控制�
 | mask     | 是否显示遮罩层 | Boolean  |      —      | true |
 | custom-class    | 自定义类名 | String  |      —      |  —  |
 | body-style    | 自定body的样式style | Object  |      —      |  —  |
-| z-index    | 层级 | Number  |      —      |  2000  |
+| z-index    | 层级 | Number，默认为2000，弹窗会自增，如设置了此值，则会从当前设置的值进行自增  |      —      |  0  |
 | append-to-body    | 是否将对话框放置于 body 内 | Boolean  |      —      |  false  |
 | lock-scroll | 出现modal时锁定滚动 | Boolean  |      —      |  true  |
 | transition-name   |弹窗动画 | String  |      —      | 'dialog-fade' |
