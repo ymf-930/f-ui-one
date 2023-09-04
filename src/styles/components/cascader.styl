@@ -5,7 +5,7 @@
   box-sizing: border-box;
   vertical-align: middle;
   color: var(--fei-color-text-default);
-  font-size: var(--fei-base-font-size);
+  font-size: var(--fei-font-size-default);
   line-height: var(--fei-base-line-height);
   &:not(.is-disabled):hover .fei-input__inner {
     cursor: pointer;
@@ -55,7 +55,7 @@
   }
 
   &__suggestion-panel {
-    border-radius: var(--fei-border-base-radius);
+    border-radius: var(--fei-border-radius-default);
   }
   &__suggestion-list {
     max-height: 204px;
@@ -112,11 +112,11 @@
 
 // 下拉框样式
 .fei-cascader__dropdown {
-  border-radius: var(--fei-border-base-radius);
+  border-radius: var(--fei-border-radius-default);
   &.fei-popper {
-    background-color: var(--fei-color-white);
+    background-color: var(--fei-white-color);
     box-sizing: border-box;
-    border-radius: var(--fei-border-base-radius);
+    border-radius: var(--fei-border-radius-default);
     box-shadow: var(--fei-shadow-down);
     z-index: 900;
     &.is-light {

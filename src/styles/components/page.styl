@@ -1,6 +1,6 @@
 .fei-page {
   color: var(--fei-color-text-default);
-  font-size: var(--fei-base-font-size);
+  font-size: var(--fei-font-size-default);
   font-variant: tabular-nums;
   line-height: 1.5715;
   &:after {
@@ -21,12 +21,12 @@
     margin-right: 4px;
     text-align: center;
     list-style: none;
-    background-color: var(--fei-color-white);
+    background-color: var(--fei-white-color);
     user-select: none;
     cursor: pointer;
     font-family: Arial;
     border: var(--fei-border-base);
-    border-radius: var(--fei-border-base-radius);
+    border-radius: var(--fei-border-radius-default);
     transition: border var(--fei-animation-duration-base) ease-in-out, color var(--fei-animation-duration-base) ease-in-out;
     a {
       font-family: Monospaced Number;
@@ -86,7 +86,7 @@
     color: #666;
     font-family: Arial;
     border: var(--fei-border-base);
-    border-radius: var(--fei-border-base-radius);
+    border-radius: var(--fei-border-radius-default);
     transition: all var(--fei-animation-duration-base) ease-in-out;
   }
 
@@ -98,16 +98,16 @@
   }
 
   &-prev, &-next {
-    background-color: var(--fei-color-white);
+    background-color: var(--fei-white-color);
     padding: 0 5px;
     a {
       color: var(--fei-color-text-secondary);
-      font-size: var(--fei-base-font-size);
+      font-size: var(--fei-font-size-default);
       display: inline-flex;
       align-items: center;
       height: 100%;
       .f-iconfont {
-        font-size: var(--fei-base-font-size);
+        font-size: var(--fei-font-size-default);
       }
     }
     &:hover {
@@ -153,11 +153,11 @@
         height: 32px;
         line-height: 1.5;
         padding: 0 11px;
-        font-size: var(--fei-base-font-size);
+        font-size: var(--fei-font-size-default);
         border: var(--fei-border-base);
-        border-radius: var(--fei-border-base-radius);
+        border-radius: var(--fei-border-radius-default);
         color: var(--fei-color-text-default);
-        background-color: var(--fei-color-white);
+        background-color: var(--fei-white-color);
         background-image: none;
         position: relative;
         cursor: text;
@@ -178,7 +178,7 @@
     height: 32px;
     line-height: 32px;
     margin-right: 10px;
-    font-size: var(--fei-base-font-size);
+    font-size: var(--fei-font-size-default);
   }
   &-simple &-prev, &-simple &-next {
     margin: 0;
@@ -199,10 +199,10 @@
       padding: 5px 8px;
       text-align: center;
       box-sizing: border-box;
-      background-color: var(--fei-color-white);
+      background-color: var(--fei-white-color);
       outline: none;
       border: var(--fei-border-base);
-      border-radius: var(--fei-border-base-radius);
+      border-radius: var(--fei-border-radius-default);
       transition: border var(--fei-animation-duration-base) ease-in-out, background var(--fei-animation-duration-base) ease-in-out, box-shadow var(--fei-animation-duration-base) ease;
       &:hover {
         border-color: var(--fei-color-primary);
@@ -226,7 +226,7 @@
     min-width: 24px;
     height: 24px;
     line-height: 23px;
-    border-radius: var(--fei-border-base-radius);
+    border-radius: var(--fei-border-radius-default);
     &-active {
       border-color: var(--fei-color-primary);
     }

@@ -76,11 +76,6 @@ Fei UI One 提供了一套默认的主题变量，并在一定程度上可以定
 
 ```css
 :root {
-    /* white-color */
-    --fei-color-white: #fff;
-    --fei-color-white-light: rgba(255, 255, 255, 0.65);
-    --fei-color-white-light2: rgba(255, 255, 255, 0.35);
-    --fei-dark-bg: #001529;
     /* primary-color */
     --fei-color-primary: #1677ff;
     --fei-color-primary-light1: #40a1ff;
@@ -126,6 +121,26 @@ Fei UI One 提供了一套默认的主题变量，并在一定程度上可以定
     --fei-color-danger-light5: #fee9ea;
     --fei-color-danger-light6: #fff4f5;
     --fei-color-danger-active: #dd1f29;
+    --fei-color-input-shadow: rgba(16, 137, 255, 0.2);
+    --fei-color-input-error-shadow: rgba(245, 34, 45, 0.2);
+    /* 背景色 */
+    --fei-bg-color-1: #17171a;
+    --fei-bg-color-2: #232324;
+    --fei-bg-color-3: #2a2a2b;
+    --fei-bg-color-4: #313132;
+    /* 文字色 */
+    --fei-text-color-1: #1d2129;
+    --fei-text-color-2: #4e5969;
+    --fei-text-color-3: #86909c;
+    --fei-text-color-4: #c9cdd4; 
+    /* 填充色 */
+    --fei-fill-color-1: #f7f8fa;
+    --fei-fill-color-2: #f2f3f5;
+    --fei-fill-color-3: #e5e6eb;
+    --fei-fill-color-4: #c9cdd4;
+    /* white-color */
+    --fei-white-color: #fff;
+    --fei-black-color: var(--fei-bg-color-1);
     /* text-color */
     --fei-color-text-primary: #17233d;
     --fei-color-text-default: #515a6e;
@@ -135,36 +150,74 @@ Fei UI One 提供了一套默认的主题变量，并在一定程度上可以定
     /* bg-color */
     --fei-color-bg-fa: #fafafa;
     --fei-color-select-hover: #f5f5f5;
-    --fei-color-input-shadow: rgba(16, 137, 255, 0.2);
-    --fei-color-input-error-shadow: rgba(245, 34, 45, 0.2);
     /* border */
     --fei-border-color-base: #dcdfe6;
     --fei-border-color-light: #f0f0f0;
-    --fei-border-base: 1px solid #dcdfe6;
-    --fei-border-base-light: 1px solid #f0f0f0;
-    --fei-border-table: 1px solid #e8eaec;
-    --fei-border-table-color: #e8eaec;
-    --fei-border-popper-color: #EBEEF5;
-    /* radius font-size */
-    --fei-border-base-radius: 2px;
-    --fei-base-font-size: 14px;
-    --fei-header-font-size: 16px;
+    --fei-border-base: 1px solid var(--fei-border-color-base);
+    --fei-border-base-light: 1px solid var(--fei-border-color-light);
+    /* radius */
+    --fei-border-radius-none: 0;
+    --fei-border-radius-default: 2px;
+    --fei-border-radius-medium: 4px;
+    /* font-size */
+    --fei-font-size-small: 12px;
+    --fei-font-size-default: 14px;
+    --fei-font-size-large: 16px;
     /* height */
     --fei-large-height: 36px;
-    --fei-large-height-2: 34px;
+    --fei-large-height-2: calc(var(--fei-large-height) - 2px);
     --fei-default-height: 32px;
-    --fei-default-height-2: 30px;
+    --fei-default-height-2: calc(var(--fei-default-height) - 2px);
     --fei-small-height: 28px;
-    --fei-small-height-2: 26px;
+    --fei-small-height-2: calc(var(--fei-small-height) - 2px);
     --fei-mini-height: 24px;
-    --fei-mini-height-2: 22px;
+    --fei-mini-height-2: calc(var(--fei-mini-height) - 2px);
     --fei-base-line-height: 1.5715;
     /* animation-duration */
-    --fei-animation-duration-slow: 0.3s;
-    --fei-animation-duration-base: 0.2s;
+    --fei-animation-duration-slow: 0.35s;
+    --fei-animation-duration-base: 0.25s;
     /* shadow-duration */
     --fei-shadow-down: 0px 3px 6px -4px rgba(0, 0, 0, .12), 0 6px 16px 0px rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
-    --fei-shadow-popper: 0 1px 6px rgba(0, 0, 0, .2);
+    --fei-shadow-popper: 0 2px 8px rgba(0, 0, 0, .15);
+    /* scrollbar */
+    --fei-scrollbar-width: 5px;
+    --fei-scrollbar-radius: 5px;
+    --fei-scrollbar-color: rgba(0, 0, 0, 0.25);
+    --fei-scrollbar-color-hover: rgba(0, 0, 0, 0.4);
+    --fei-scrollbar-track: rgba(0, 0, 0, 0.05);
+    /* tag-style */
+    --fei-tag-height: 22px;
+    --fei-tag-font-size: 12px;
+    --fei-tag-padding: 0 7px;
+    /* page */
+    --fei-page-border-color: transparent;
+    --fei-page-bg: var(--fei-white-color);
+    --fei-page-hover-bg: var(--fei-fill-color-2);
+    --fei-page-active-bg: var(--fei-color-primary-light5);
+    /* table */
+    --fei-table-header-bg: var(--fei-fill-color-2);
+    --fei-table-header-text: var(--fei-text-color-1);
+    --fei-border-table-color: var(--fei-fill-color-3);
+    --fei-border-table: 1px solid var(--fei-border-table-color);
+    /* popper */
+    --fei-popper-padding: 4px;
+    --fei-popper-tooltip-padding: 8px 10px;
+    --fei-popper-radius: 4px;
+    --fei-popper-item-height: 30px;
+    --fei-popper-item-margin-bottom: 4px;
+    --fei-popper-bg-light: var(--fei-white-color);
+    --fei-popper-bg-dark: var(--fei-black-color);
+    /* menu */
+    --fei-menu-padding: 8px;
+    --fei-menu-item-height: 40px;
+    --fei-menu-item-height-h: 60px;
+    --fei-menu-item-border-radius: 4px;
+    --fei-menu-collapse-width: 48px;
+    --fei-menu-text-color: var(--fei-color-text-default);
+    --fei-menu-text-hover-color: var(--fei-menu-text-color);
+    --fei-menu-text-active-color: var(--fei-color-primary);
+    --fei-menu-bg-color: var(--fei-white-color);
+    --fei-menu-bg-hover-color: var(--fei-color-primary-light6);
+    --fei-menu-bg-active-color: var(--fei-color-primary-light6);
 }
-
 ```

@@ -1,6 +1,6 @@
 {
   "name": "f-ui-one",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "keywords": [
     "f-ui",
     "f-ui-one",
@@ -23,7 +23,7 @@
   "scripts": {
     "dev": "webpack server --config build/webpack.dev.js",
     "build:demo": "rimraf docs && cross-env NODE_ENV=production webpack --config build/webpack.dev.js",
-    "build": "yarn clean-lib && yarn build:lib && yarn build:style",
+    "build": "pnpm clean-lib && pnpm build:lib && pnpm build:style",
     "clean-lib": "rimraf lib",
     "build:lib": "rollup --config ./build/rollup.config.js",
     "build:style": "gulp --gulpfile ./build/gulpfile.js",

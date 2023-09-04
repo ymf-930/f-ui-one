@@ -16,9 +16,9 @@ placeholder() {
 
 .fei-picker__popper.fei-popper[role=tooltip] {
   border: none;
-  background-color: var(--fei-color-white);
+  background-color: var(--fei-white-color);
   box-sizing: border-box;
-  border-radius: var(--fei-border-base-radius);
+  border-radius: var(--fei-border-radius-default);
   box-shadow: var(--fei-shadow-down);
   position: absolute;
   z-index: 900;
@@ -28,7 +28,7 @@ placeholder() {
   position: relative;
   color: var(--fei-color-text-default);
   background: #fff;
-  border-radius: var(--fei-base-font-size);
+  border-radius: var(--fei-font-size-default);
   line-height: 30px;
 }
 .fei-date-editor {
@@ -41,7 +41,7 @@ placeholder() {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-size: var(--fei-base-font-size);
+    font-size: var(--fei-font-size-default);
     color: var(--fei-color-text-default);
     placeholder()
   }
@@ -52,7 +52,7 @@ placeholder() {
     margin: 0;
     text-align: center;
     line-height: var(--fei-default-height);
-    font-size: var(--fei-base-font-size);
+    font-size: var(--fei-font-size-default);
     width: 28px;
     color: #303133;
   }
@@ -60,7 +60,7 @@ placeholder() {
 
 // time-pick独有的样式
 .fei-time-panel {
-  border-radius: var(--fei-border-base-radius);
+  border-radius: var(--fei-border-radius-default);
   position: relative;
   width: 180px;
   left: 0;
@@ -232,7 +232,7 @@ placeholder() {
     }
   }
   .fei-input__icon {
-    font-size: var(--fei-base-font-size);
+    font-size: var(--fei-font-size-default);
     color: var(--fei-color-text-secondary);
     line-height: 32px;
     width: 16px;

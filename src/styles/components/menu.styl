@@ -1,19 +1,59 @@
+.fei-menu-wrapper {
+  --f-menu-collapse-width: var(--fei-menu-collapse-width);
+  --f-menu-padding: var(--fei-menu-padding);
+  --f-menu-item-height: var(--fei-menu-item-height);
+  --f-menu-item-height-h: var(--fei-menu-item-height-h);
+  --f-menu-item-border-radius: var(--fei-menu-item-border-radius);
+  --f-menu-text-color: var(--fei-menu-text-color);
+  --f-menu-text-hover-color: var(--fei-menu-text-hover-color);
+  --f-menu-text-active-color: var(--fei-menu-text-active-color);
+  --f-menu-bg-color: var(--fei-menu-bg-color);
+  --f-menu-bg-hover-color: var(--fei-menu-bg-hover-color);
+  --f-menu-bg-active-color: var(--fei-menu-bg-active-color);
+}
+
+.fei-menu-wrapper {
+  padding: var(--f-menu-padding);
+  overflow-x: hidden;
+  transition: 0.2s;
+
+  &.is-horizontal {
+    padding: 0;
+    border-bottom: solid 1px #e6e6e6;
+  }
+
+  &.is-collapse {
+    padding: 0;
+    width: var(--f-menu-collapse-width) !important;
+  }
+}
+
 .fei-menu-item {
-  height: 40px;
-  line-height: 40px;
-  font-size: var(--fei-base-font-size);
-  color: var(--fei-color-text-default);
+  display: flex;
+  align-items: center;
+  height: var(--f-menu-item-height);
+  line-height: var(--f-menu-item-height);
+  font-size: var(--fei-font-size-default);
+  border-radius: var(--f-menu-item-border-radius);
+  color: var(--f-menu-text-color);
   list-style: none;
-  padding: 0 20px;
+  padding: 0 10px;
+  margin-bottom: 4px;
   cursor: pointer;
   position: relative;
   transition: border-color 0.3s, background-color 0.3s, color 0.3s;
   box-sizing: border-box;
   overflow: hidden;
   white-space: nowrap;
+
   &.is-tooltip {
     padding: 0;
+
+    > div {
+      padding-left: 12px !important;
+    }
   }
+
   i {
     position: relative;
     top: -1px;
@@ -26,11 +66,13 @@
     color: var(--fei-color-primary);
     background: var(--fei-color-primary-light6);
   }
+
   &.is-disabled {
     opacity: .25;
     cursor: not-allowed;
     background: 0 0 !important
   }
+
   .f-iconfont {
     margin-right: 5px;
     width: 24px;
@@ -38,15 +80,23 @@
     font-size: 18px;
     vertical-align: middle;
   }
+
   &.is-active {
     color: var(--fei-color-primary);
+    background: var(--f-menu-bg-active-color);
+
     i {
       color: inherit;
     }
   }
+
   .fei-tooltip {
     width: 100%;
     height: 100%;
+  }
+
+  &:last-child:not(:first-child) {
+    margin-bottom: 0;
   }
 }
 
@@ -54,18 +104,23 @@
   list-style: none;
   margin: 0;
   padding-left: 0;
+
   &__title {
     position: relative;
-    height: 48px;
-    line-height: 48px;
-    font-size: var(--fei-base-font-size);
-    color: var(--fei-color-text-default);
-    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: var(--f-menu-item-height);
+    line-height: var(--f-menu-item-height);
+    font-size: var(--fei-font-size-default);
+    color: var(--f-menu-text-color);
+    padding: 0 10px;
+    margin-bottom: 4px;
     cursor: pointer;
     transition: border-color var(--fei-animation-duration-slow), background-color var(--fei-animation-duration-slow), color var(--fei-animation-duration-slow);
     box-sizing: border-box;
     overflow: hidden;
     white-space: nowrap;
+
     .f-iconfont {
       margin-right: 5px;
       width: 24px;
@@ -73,17 +128,35 @@
       font-size: 18px;
       vertical-align: middle;
     }
+
     * {
       vertical-align: middle;
     }
+
     i {
       color: inherit;
     }
+
     &:focus, &:hover {
       outline: 0;
       background: var(--fei-color-primary-light6);
     }
+
+    &.is-active, &:hover {
+      color: var(--f-menu-text-hover-color);
+      background: var(--f-menu-bg-hover-color);
+    }
+
+    &.is-active {
+      color: var(--f-menu-text-active-color);
+      background: var(--f-menu-bg-active-color);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
+
   .fei-submenu__icon-arrow {
     position: absolute;
     top: 50%;
@@ -94,14 +167,26 @@
     line-height: 1;
     margin-right: 0;
   }
+
   &.is-opened > .fei-submenu__title .fei-submenu__icon-arrow {
     transform: rotate(180deg);
+  }
+
+  &.is-active {
+    > .fei-submenu__title {
+      color: var(--f-menu-text-active-color);
+    }
+  }
+
+  .fei-submenu__icon-arrow {
+    right: 8px;
   }
 }
 
 .fei-menu-item-group > ul {
   padding: 0
 }
+
 .fei-menu-item-group__title {
   padding: 7px 0 7px 20px;
   line-height: normal;
@@ -110,6 +195,7 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
 .fei-menu {
   list-style: none;
   position: relative;
@@ -117,58 +203,80 @@
   margin: 0;
   padding-left: 0;
   //background-color: #FFF;
+
   &::before, &::after {
     display: table;
     content: '';
   }
+
   &::after {
     clear: both;
   }
-  &.fei-menu--horizontal {
-    border-bottom: solid 1px #e6e6e6;
-  }
+
   &--horizontal {
     border-right: none;
+
     > .fei-menu-item {
       float: left;
-      height: 60px;
-      line-height: 60px;
+      height: var(--f-menu-item-height-h);
+      line-height: var(--f-menu-item-height-h);
       margin: 0;
       border-bottom: 2px solid transparent;
+      border-radius: 0;
+      padding: 0 20px;
+
       a, a:hover {
         color: inherit;
       }
+
       &:not(.is-disabled):hover, &:not(.is-disabled):focus {
         background-color: #fff;
       }
+
       &.is-active {
         border-bottom: 2px solid var(--fei-color-primary);
         color: var(--fei-color-primary);
       }
     }
+
     > .fei-submenu {
       float: left;
+
       &:focus, &:hover {
         outline: none;
+
         .fei-menu-submenu__title {
           color: var(--fei-color-primary);
         }
       }
+
       &.is-active {
         .fei-submenu__title {
           border-bottom: 2px solid var(--fei-color-primary);
           color: var(--fei-color-primary);
         }
       }
+
+      &.is-active {
+        .fei-submenu__title {
+          border-bottom: 2px solid var(--fei-color-primary);
+          color: var(--fei-color-primary);
+        }
+      }
+
       .fei-submenu__title {
-        height: 60px;
-        line-height: 60px;
+        height: var(--f-menu-item-height-h);
+        line-height: var(--f-menu-item-height-h);
         border-bottom: 2px solid transparent;
         color: var(--fei-color-text-default);
+        border-radius: 0;
+        padding: 0 20px;
+
         &:hover {
           background-color: #fff;
         }
       }
+
       .fei-submenu__icon-arrow {
         position: static;
         vertical-align: middle;
@@ -185,19 +293,22 @@
   min-width: 180px;
   border: none;
   padding: 5px 0;
-  border-radius: var(--fei-border-base-radius);
+  border-radius: var(--fei-border-radius-default);
   box-shadow: var(--fei-shadow-down);
+
   .fei-menu-item, .fei-submenu__title {
     height: 40px;
     line-height: 40px;
   }
 }
+
 .fei-submenu-popper.fei-popper.is-light {
   border: none;
 }
 
 .fei-menu--collapse {
   width: 64px;
+
   .fei-submenu .fei-menu {
     position: absolute;
     margin-left: 5px;
@@ -208,6 +319,7 @@
     border-radius: 2px;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1)
   }
+
   > .fei-menu-item,
   > .fei-submenu > .fei-submenu__title {
     .f-iconfont {
@@ -216,6 +328,7 @@
       width: 24px;
       text-align: center;
     }
+
     span {
       height: 0;
       width: 0;
@@ -224,16 +337,20 @@
       display: inline-block;
     }
   }
+
   .fei-submenu {
     position: relative
   }
+
   .fei-submenu__icon-arrow {
     display: none;
   }
+
   .fei-submenu.is-opened > .fei-submenu__title .fei-submenu__icon-arrow {
     transform: none;
   }
 }
+
 // 特殊的箭头
 .fei-effect-arrow {
   position: absolute;
@@ -242,6 +359,7 @@
   width: 10px;
   transition: transform .3s cubic-bezier(.645, .045, .355, 1);
   background: linear-gradient(to right, var(--fei-color-text-default), var(--fei-color-text-default));
+
   &::before, &::after {
     position: absolute;
     width: 6px;
@@ -251,16 +369,20 @@
     transition: background .3s cubic-bezier(.645, .045, .355, 1), transform .3s cubic-bezier(.645, .045, .355, 1), top .3s cubic-bezier(.645, .045, .355, 1);
     content: '';
   }
+
   &::before {
     transform: rotate(-45deg) translateX(2px);
   }
+
   &::after {
     transform: rotate(45deg) translateX(-2px);
   }
+
   &.is-right {
     &::before {
       transform: rotate(45deg) translateX(-2px);
     }
+
     &::after {
       transform: rotate(-45deg) translateX(-2px);
     }
@@ -272,10 +394,12 @@
   transition: .2s;
   opacity: 0
 }
+
 .fei-opacity-transition {
   -webkit-transition: opacity .3s cubic-bezier(.55, 0, .1, 1);
   transition: opacity .3s cubic-bezier(.55, 0, .1, 1)
 }
+
 .fei-submenu-popper .fei-menu-item {
   padding: 0 20px;
 }

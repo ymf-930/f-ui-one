@@ -6,7 +6,7 @@
     overflow: auto;
     border: none;
     color: var(--fei-color-text-default);
-    font-size: var(--fei-base-font-size);
+    font-size: var(--fei-font-size-default);
     thead, tbody {
       width: auto;
     }
@@ -23,12 +23,12 @@
 .fei-table {
   user-select: text;
   color: var(--fei-color-text-default);
-  font-size: var(--fei-base-font-size);
+  font-size: var(--fei-font-size-default);
   width: inherit;
   height: 100%;
   max-width: 100%;
   overflow: hidden;
-  background-color: var(--fei-color-white);
+  background-color: var(--fei-white-color);
   box-sizing: border-box;
   &-wrapper {
     position: relative;
@@ -196,7 +196,7 @@
       cursor: pointer;
       transition: transform var(--fei-animation-duration-base) ease-in-out;
       i {
-        font-size: var(--fei-base-font-size);
+        font-size: var(--fei-font-size-default);
       }
       &-expanded {
         transform: rotate(90deg);
@@ -246,7 +246,7 @@
   }
 
   &-large {
-    font-size: var(--fei-base-font-size);
+    font-size: var(--fei-font-size-default);
     td {
       height: 55px;
     }

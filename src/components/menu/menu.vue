@@ -1,5 +1,12 @@
 <template>
-  <f-menu-collapse-transition v-if="props.collapseTransition">
+  <div
+    class="fei-menu-wrapper"
+    :class="{
+      'is-horizontal': mode === 'horizontal',
+      'is-collapse': props.collapse,
+    }"
+    :style="{ backgroundColor: props.backgroundColor || '' }"
+  >
     <ul
       :key="+props.collapse"
       role="menubar"
@@ -12,20 +19,7 @@
     >
       <slot></slot>
     </ul>
-  </f-menu-collapse-transition>
-  <ul
-    v-else
-    :key="+props.collapse"
-    role="menubar"
-    :style="{ backgroundColor: props.backgroundColor || '' }"
-    :class="{
-      'fei-menu': true,
-      'fei-menu--horizontal': mode === 'horizontal',
-      'fei-menu--collapse': props.collapse,
-    }"
-  >
-    <slot></slot>
-  </ul>
+  </div>
 </template>
 <script>
 import {
@@ -39,13 +33,11 @@ import {
 } from 'vue'
 import mitt from 'mitt'
 import Menubar from './util/menu-bar'
-import FMenuCollapseTransition from './menu-collapse-transition.vue'
 import useMenuColor from './useMenuColor'
 
 export default {
   name: 'FMenu',
   componentName: 'FMenu',
-  components: { FMenuCollapseTransition, },
   props: {
     mode: {
       type: String,
@@ -66,10 +58,6 @@ export default {
     backgroundColor: { type: String },
     textColor: { type: String },
     activeTextColor: { type: String },
-    collapseTransition: {
-      type: Boolean,
-      default: true,
-    },
   },
   emits: ['close', 'open', 'select'],
   setup(props, ctx) {

@@ -5,7 +5,7 @@
   white-space: nowrap;
   margin-right: 8px;
   user-select: none;
-  font-size: var(--fei-base-font-size);
+  font-size: var(--fei-font-size-default);
   &-group {
     font-size: 0;
   }
@@ -21,8 +21,8 @@
     top: 0;
     left: 0;
     border: var(--fei-border-base);
-    border-radius: var(--fei-border-base-radius);
-    background-color: var(--fei-color-white);
+    border-radius: var(--fei-border-radius-default);
+    background-color: var(--fei-white-color);
     transition: border-color var(--fei-animation-duration-base) ease-in-out, background-color var(--fei-animation-duration-base) ease-in-out;
     &:after {
       content: "";
@@ -63,7 +63,7 @@
         width: 100%;
         height: 100%;
         border: 1px solid var(--fei-color-primary);
-        border-radius: var(--fei-border-base-radius);
+        border-radius: var(--fei-border-radius-default);
         animation: checkEffect var(--fei-animation-duration-slow) ease-in-out;
         animation-fill-mode: backwards;
         content: '';
@@ -92,7 +92,7 @@
     &.is-indeterminate {
       .fei-checkbox__inner {
         border: var(--fei-border-base);
-        background-color: var(--fei-color-white);
+        background-color: var(--fei-white-color);
       }
       .fei-checkbox__inner:after {
         content: "";

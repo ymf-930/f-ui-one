@@ -2,7 +2,7 @@
   display: inline-block;
   font-size: 12px;
   color: var(--fei-color-text-default);
-  background-color: var(--fei-color-white);
+  background-color: var(--fei-white-color);
   background-image: none;
   position: relative;
   transition: border var(--fei-animation-duration-base) ease-in-out, background var(--fei-animation-duration-base) ease-in-out, box-shadow var(--fei-animation-duration-base) ease-in-out;
@@ -13,7 +13,7 @@
   line-height: var(--fei-default-height);
   vertical-align: middle;
   border: var(--fei-border-base);
-  border-radius: var(--fei-border-base-radius);
+  border-radius: var(--fei-border-radius-default);
   overflow: hidden;
   cursor: default;
   &:hover {
@@ -52,7 +52,7 @@
     .fei-input-number-handler-minus {
       cursor: pointer;
       left: 0;
-      border-radius: var(--fei-border-base-radius) 0 0 var(--fei-border-base-radius);
+      border-radius: var(--fei-border-radius-default) 0 0 var(--fei-border-radius-default);
       border-right: var(--fei-border-base);
       &-disabled {
         color: #c0c4cc;
@@ -72,7 +72,7 @@
     .fei-input-number-handler-plus {
       cursor: pointer;
       right: 0;
-      border-radius: 0 var(--fei-border-base-radius) var(--fei-border-base-radius) 0;
+      border-radius: 0 var(--fei-border-radius-default) var(--fei-border-radius-default) 0;
       border-left: var(--fei-border-base);
       &-disabled {
         color: #c0c4cc;
@@ -105,7 +105,7 @@
   -moz-appearance: textfield;
   color: var(--fei-color-text-default);
   border: 0;
-  border-radius: var(--fei-border-base-radius);
+  border-radius: var(--fei-border-radius-default);
   transition: all var(--fei-animation-duration-base) linear;
 }
 
@@ -117,8 +117,8 @@
   flex-direction: column;
   width: 22px;
   height: 100%;
-  border-radius: 0 var(--fei-border-base-radius) var(--fei-border-base-radius) 0;
-  background: var(--fei-color-white);
+  border-radius: 0 var(--fei-border-radius-default) var(--fei-border-radius-default) 0;
+  background: var(--fei-white-color);
 }
 //  数字输入
 .fei-input-number-handler {
@@ -129,7 +129,7 @@
   text-align: center;
   cursor: pointer;
   font-size: 13px;
-  background: var(--fei-color-white);
+  background: var(--fei-white-color);
   right: 0;
   display: inline-flex;
   align-items: center;
@@ -222,7 +222,7 @@
 .fei-input-number-mini {
   padding: 0;
   height: var(--fei-mini-height);
-  border-radius: var(--fei-border-base-radius);
+  border-radius: var(--fei-border-radius-default);
   input {
     height: var(--fei-mini-height);
     line-height: var(--fei-mini-height);
@@ -250,7 +250,7 @@
 .fei-input-number-small {
   padding: 0;
   height: var(--fei-small-height);
-  border-radius: var(--fei-border-base-radius);
+  border-radius: var(--fei-border-radius-default);
   input {
     height: var(--fei-small-height);
     line-height: var(--fei-small-height);
