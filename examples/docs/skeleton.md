@@ -88,7 +88,7 @@ loading结束后加载真实的ui，通过slot设置之后的ui
 ```html
 
 <template>
-  <div class="mf-15">
+  <div class="mb-15">
     <label style="margin-right: 16px;">切换 Loading</label>
     <f-switch v-model="loading" />
   </div>

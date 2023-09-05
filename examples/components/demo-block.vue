@@ -77,7 +77,7 @@ export default {
 <style lang="stylus">
 .demo-block {
   border: solid 1px #ebebeb;
-  border-radius: 2px;
+  border-radius: var(--fei-border-radius-default);
   code {
     font-family: Menlo, Monaco, Consolas, Courier, monospace;
   }
@@ -155,6 +155,7 @@ export default {
     text-align: center;
     color: #d3dce6;
     cursor: pointer;
+    border-radius: 0 0 var(--fei-border-radius-default) var(--fei-border-radius-default);
     i {
       font-size: 16px;
       line-height: 44px;

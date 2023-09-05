@@ -45,6 +45,8 @@
 
 .fei-dropdown-menu {
   min-width: 100px;
+  padding 0 4px;
+  border-radius: var(--fei-border-radius-large);
   .fei-dropdown {
     width: 100%;
   }
@@ -63,10 +65,12 @@
     &:hover, &:focus {
       background: #f3f3f3;
       outline: none;
+      border-radius: var(--fei-border-radius-default);
     }
 
     &-selected {
       background: var(--fei-color-primary-light5);
+      border-radius: var(--fei-border-radius-default);
     }
     &-disabled {
       color: var(--fei-color-text-disabled) !important;

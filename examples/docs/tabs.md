@@ -97,7 +97,7 @@
 ```html
 
 <template>
-  <div class="mf-15">
+  <div class="mb-15">
     <f-button type="primary" plain size="small" @click="handleAdd">add tab</f-button>
   </div>
   <f-tabs v-model="activeTab" :data="tabs" type="card" closable
@@ -231,7 +231,7 @@
 ```html
 
 <template>
-  <div class="mf-15">
+  <div class="mb-15">
     <f-button type="primary" plain size="small" @click="handleAdd">add tab</f-button>
   </div>
   <f-tabs v-model="activeTab" :data="tabs" type="tag" closable context-menu

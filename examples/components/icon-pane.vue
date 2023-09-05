@@ -70,6 +70,7 @@ export default {
     padding: 0;
     min-height: 120px;
     border: 1px solid #eaeefb;
+    border-radius: var(--fei-border-radius-default);
     li {
       display: inline-block;
       width: 125px;

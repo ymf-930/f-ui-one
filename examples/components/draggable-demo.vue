@@ -67,6 +67,7 @@ export default {
   border: 1px solid #eeeeee;
   padding: 24px;
   margin-top: 24px;
+  border-radius: var(--fei-border-radius-default);
 }
 
 .list-group {

@@ -25,11 +25,6 @@
               <f-dropdown-item name="fei-datav">fei-datav</f-dropdown-item>
               <f-dropdown-item name="fei-editor">fei-editor</f-dropdown-item>
               <f-dropdown-item name="fei-charts">fei-charts</f-dropdown-item>
-              <div class="drop-down-menu-group">Vue2组件库</div>
-              <f-dropdown-item name="fei-tree-org">fei-tree-org</f-dropdown-item>
-              <div class="drop-down-menu-group">动画库</div>
-              <f-dropdown-item name="fei-animation">fei-animation</f-dropdown-item>
-              <f-dropdown-item name="fei-keyframe-animation">fei-keyframe-animation</f-dropdown-item>
             </f-dropdown-menu>
           </template>
         </f-dropdown>

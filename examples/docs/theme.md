@@ -156,9 +156,11 @@ Fei UI One 提供了一套默认的主题变量，并在一定程度上可以定
     --fei-border-base: 1px solid var(--fei-border-color-base);
     --fei-border-base-light: 1px solid var(--fei-border-color-light);
     /* radius */
-    --fei-border-radius-none: 0;
-    --fei-border-radius-default: 2px;
-    --fei-border-radius-medium: 4px;
+  --fei-border-radius-none: 0;
+  --fei-border-radius-small: 2px;
+  --fei-border-radius-default: 4px;
+  --fei-border-radius-medium: 4px;
+  --fei-border-radius-large: 6px;
     /* font-size */
     --fei-font-size-small: 12px;
     --fei-font-size-default: 14px;
