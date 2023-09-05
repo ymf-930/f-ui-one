@@ -101,8 +101,14 @@
       "desc": "布局",
       "items": [
         {
-          "desc": "Grid 栅格",
+          "desc": "Layout 布局组件",
           "icon": "layout",
+          "name": "layout",
+          "path": "/layout"
+        },
+        {
+          "desc": "Grid 栅格",
+          "icon": "appstore",
           "name": "grid",
           "path": "/grid"
         },

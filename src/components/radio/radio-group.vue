@@ -21,7 +21,7 @@ export default {
     },
     type: {
       validator(value) {
-        return ['button'].includes(value)
+        return ['button', 'capsule'].includes(value)
       }
     },
     size: {

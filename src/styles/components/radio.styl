@@ -122,7 +122,7 @@
     border: 1px solid #dcdee2;
     background: #fff;
     height: var(--fei-default-height);
-    line-height: var(--fei-default-height);
+    line-height: var(--fei-default-height-2);
     transition: background-color var(--fei-animation-duration-base), color var(--fei-animation-duration-base);
     &:hover {
       color: var(--fei-color-primary);
@@ -168,9 +168,8 @@
     padding: 0 8px;
   }
   .fei-radio.is-checked {
-    background: var(--fei-color-primary);
     border-color: var(--fei-color-primary);
-    color: #fff;
+    color: var(--fei-color-primary);
     z-index: 1;
     &:hover {
       color: #fff;
@@ -196,6 +195,90 @@
   }
 }
 
+.fei-radio-group-capsule {
+  display: inline-flex;
+  padding: 1.5px;
+  height: var(--fei-default-height);
+  background-color: var(--fei-fill-color-2);
+  border-radius: var(--fei-border-radius-default);
+
+  &.fei-radio-group-large {
+    height: var(--fei-large-height);
+
+    .fei-radio {
+      line-height: calc(var(--fei-large-height) - 8px);
+    }
+  }
+
+  &.fei-radio-group-small {
+    height: var(--fei-small-height);
+
+    .fei-radio {
+      line-height: calc(var(--fei-small-height) - 8px);
+    }
+  }
+
+  &.fei-radio-group-mini {
+    height: var(--fei-mini-height);
+
+    .fei-radio {
+      font-size: 12px;
+      line-height: calc(var(--fei-mini-height) - 8px);
+    }
+  }
+
+  .fei-radio {
+    position: relative;
+    display: inline-block;
+    margin: 1.5px;
+    color: var(--color-text-2);
+    line-height: calc(var(--fei-default-height) - 8px);
+    font-size: 14px;
+    background-color: transparent;
+    border-radius: var(--fei-border-radius-default);
+    cursor: pointer;
+    transition: all 0.1s cubic-bezier(0, 0, 1, 1);
+
+    &__input {
+      display: none;
+    }
+
+    .fei-radio__label {
+      padding: 0 12px;
+    }
+
+    &:not(.is-disabled):hover {
+      color: var(--fei-color-text-primary);
+      background-color: var(--fei-white-color);
+    }
+
+    &.is-checked {
+      color: var(--fei-color-primary);
+      background-color: var(--fei-white-color);
+
+      &:hover {
+        color: var(--fei-color-primary);
+      }
+    }
+
+    &.is-checked:before, &.is-checked + .fei-radio:before {
+      opacity: 0;
+    }
+
+    &:not(:first-of-type):before {
+      position: absolute;
+      top: 50%;
+      left: -2px;
+      display: block;
+      width: 1px;
+      height: 14px;
+      background-color: var(--fei-fill-color-3);
+      transform: translateY(-50%);
+      transition: all 0.1s cubic-bezier(0, 0, 1, 1);
+      content: '';
+    }
+  }
+}
 @keyframes radioEffect {
   0% {
     transform: scale(1);

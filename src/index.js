@@ -81,6 +81,7 @@ import LoadingBar from './components/loading-bar'
 import Message from './components/message'
 import MessageBox from './components/message-box'
 import Notice from './components/notice'
+import FLayout from './components/layout'
 
 import * as util from './utils/util'
 import * as helper from './utils/util-helper'
@@ -206,6 +207,7 @@ const components = [
   FDatePicker,
   FTable,
   FCountTo,
+  FLayout
 ]
 const plugins = [LoadingBar, Message, MessageBox, Notice]
 const defaultInstallOpt = {
@@ -331,6 +333,7 @@ export {
   FFormItem,
   FTable,
   FCountTo,
+  FLayout,
   LoadingBar,
   Message,
   MessageBox,

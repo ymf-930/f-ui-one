@@ -134,6 +134,44 @@
         <f-radio label="香蕉" disabled></f-radio>
         <f-radio label="苹果"></f-radio>
         <f-radio label="西瓜"></f-radio>
+        </f-radio-group>
+    </div>
+    <div style="margin-left: 24px;">
+      <f-radio-group v-model="fruit" type="capsule">
+        <f-radio label="香蕉"></f-radio>
+        <f-radio label="苹果"></f-radio>
+        <f-radio label="桃子"></f-radio>
+        <f-radio label="西瓜"></f-radio>
+      </f-radio-group>
+      <div class="p10"/>
+      <f-radio-group v-model="fruit" type="capsule" size="small">
+        <f-radio label="香蕉"></f-radio>
+        <f-radio label="苹果"></f-radio>
+        <f-radio label="桃子"></f-radio>
+        <f-radio label="西瓜"></f-radio>
+      </f-radio-group>
+      <div class="p10"/>
+      <f-radio-group v-model="fruit" type="capsule" size="mini">
+        <f-radio label="香蕉"></f-radio>
+        <f-radio label="苹果"></f-radio>
+        <f-radio label="桃子"></f-radio>
+        <f-radio label="西瓜"></f-radio>
+      </f-radio-group>
+    </div>
+
+    <div style="margin-left: 24px;">
+      <f-radio-group v-model="fruit" type="capsule">
+        <f-radio label="香蕉" disabled></f-radio>
+        <f-radio label="苹果"></f-radio>
+        <f-radio label="桃子"></f-radio>
+        <f-radio label="西瓜"></f-radio>
+      </f-radio-group>
+      <div class="p10"/>
+      <f-radio-group v-model="fruit" type="capsule" disabled>
+        <f-radio label="香蕉" disabled></f-radio>
+        <f-radio label="苹果"></f-radio>
+        <f-radio label="桃子"></f-radio>
+        <f-radio label="西瓜"></f-radio>
       </f-radio-group>
     </div>
   </div>
@@ -174,7 +212,7 @@
 |---------- |-------- |---------- |-------------  |-------- |
 | value   | 指定选中项目的集合，可以使用 v-model 双向绑定数据  | String/ Number  |  —   |   ''  |
 | disabled     | 是否禁用所有选项  | Boolean  |  —   |  false  |
-| type     | 是否开启button模式  | String  |  button   |   false  |
+| type     | 是否开启button模式  | String  |  button/capsule  |   —  |
 | size   | 按钮模式单选组的尺寸  |String  | large、small、default | — |
 
 ### RadioGroup  events

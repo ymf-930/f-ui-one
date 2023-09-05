@@ -31,27 +31,25 @@
     "lint-fix": "eslint --fix ./src --ext .vue,.js,.ts"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6",
+    "@popperjs/core": "^2.11.7",
     "async-validator": "^4.2.5",
     "color": "^4.2.3",
     "dayjs": "^1.11.6",
     "lodash": "^4.17.21",
     "mitt": "^3.0.0",
     "resize-observer-polyfill": "^1.5.1",
-    "sortablejs": "^1.15.0"
-  },
-  "peerDependencies": {
-    "vue": "^3.2.0"
+    "sortablejs": "^1.15.0",
+    "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.19.3",
+    "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.4",
-    "@babel/eslint-parser": "^7.19.1",
+    "@babel/eslint-parser": "^7.21.3",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-transform-runtime": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
-    "@babel/runtime": "^7.20.6",
-    "@rollup/plugin-babel": "^6.0.3",
+    "@babel/runtime": "^7.21.0",
+    "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
@@ -93,7 +91,6 @@
     "stylus-loader": "6.1.0",
     "transliteration": "^2.3.5",
     "url-loader": "^4.1.1",
-    "vue": "^3.2.45",
     "vue-loader": "16.5.0",
     "vue-router": "^4.1.6",
     "webpack": "^5.79.0",

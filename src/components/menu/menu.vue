@@ -22,15 +22,7 @@
   </div>
 </template>
 <script>
-import {
-  getCurrentInstance,
-  watch,
-  computed,
-  ref,
-  provide,
-  onMounted,
-  isRef,
-} from 'vue'
+import { getCurrentInstance, watch, computed, ref, provide, onMounted, isRef } from 'vue'
 import mitt from 'mitt'
 import Menubar from './util/menu-bar'
 import useMenuColor from './useMenuColor'
@@ -62,11 +54,7 @@ export default {
   emits: ['close', 'open', 'select'],
   setup(props, ctx) {
     // data
-    const openedMenus = ref(
-      props.defaultOpeneds && !props.collapse
-        ? props.defaultOpeneds.slice(0)
-        : [],
-    )
+    const openedMenus = ref(props.defaultOpeneds && !props.collapse ? props.defaultOpeneds.slice(0) : [])
     const instance = getCurrentInstance()
     const activeIndex = ref(props.defaultActive)
     const items = ref({})
@@ -79,10 +67,7 @@ export default {
 
     // computed
     const isMenuPopup = computed(() => {
-      return (
-        props.mode === 'horizontal' ||
-        (props.mode === 'vertical' && props.collapse)
-      )
+      return (props.mode === 'horizontal' || (props.mode === 'vertical' && props.collapse))
     })
 
     // methods
@@ -123,10 +108,7 @@ export default {
       // collapse all menu that are not under current menu item
       if (props.uniqueOpened) {
         openedMenus.value = openedMenus.value.filter((index) => {
-          return (
-            (isRef(indexPath) ? indexPath.value : indexPath).indexOf(index) !==
-            -1
-          )
+          return (isRef(indexPath) ? indexPath.value : indexPath).indexOf(index) !== -1
         })
       }
       openedMenus.value.push(index)
@@ -200,10 +182,7 @@ export default {
 
     const updateActiveIndex = (val) => {
       const itemsInData = items.value
-      const item =
-        itemsInData[val] ||
-        itemsInData[activeIndex.value] ||
-        itemsInData[props.defaultActive]
+      const item = itemsInData[val] || itemsInData[activeIndex.value] || itemsInData[props.defaultActive]
 
       if (item) {
         activeIndex.value = item.index
