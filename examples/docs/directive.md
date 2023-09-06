@@ -54,7 +54,7 @@
 <template>
   <div class="demo-button">
     <div v-click-outside="clickOutSide" flex="main:center cross:center"
-         style="width: 200px;height:100px;background: #2a85e4;color:#fff;font-size: 20px;">
+         style="width: 200px;height:100px;background: #1677ff;color:#fff;font-size: 20px;">
       click out side
     </div>
   </div>

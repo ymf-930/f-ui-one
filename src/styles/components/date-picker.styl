@@ -218,17 +218,44 @@
     }
     &.today {
       color: var(--fei-color-primary);
+      >div{
+        >span{
+          border: 1px solid var(--fei-color-primary);
+          &:after {
+            content: "";
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--fei-color-primary);
+            position: absolute;
+            top: 1px;
+            right: 1px;
+          }
+        }
+      }
     }
     &:not(.disabled):hover {
-      color: var(--fei-color-primary);
+      //color: var(--fei-color-primary);
       span {
-        background-color: var(--fei-color-info-light4);
+        background-color: var(--fei-color-primary-light4);
       }
     }
     &.current {
       span {
         background-color: var(--fei-color-primary);
         color: #fff;
+        &:after {
+          content: "";
+          display: block;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #fff;
+          position: absolute;
+          top: 1px;
+          right: 1px;
+        }
       }
       &:hover {
         span {
@@ -369,8 +396,8 @@
     padding: 8px 0;
     cursor: pointer;
     div {
-      height: 40px;
-      padding: 6px 0;
+      height: 36px;
+      padding: 4px;
     }
     .cell {
       width: 48px;
@@ -411,10 +438,16 @@
     &.start-date div {
       border-top-left-radius: var(--fei-border-radius-default);
       border-bottom-left-radius: var(--fei-border-radius-default);
+      .cell:first-child{
+        margin-left: 0;
+      }
     }
     &.end-date div {
       border-top-right-radius: var(--fei-border-radius-default);
       border-bottom-right-radius: var(--fei-border-radius-default);
+      .cell:last-child{
+        margin-right: 0;
+      }
     }
     &.in-range div, &.in-range div:hover {
       background: var(--fei-color-primary-light5);

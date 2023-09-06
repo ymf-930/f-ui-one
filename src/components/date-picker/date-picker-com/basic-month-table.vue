@@ -57,30 +57,30 @@ export default {
   emits: ['changerange', 'pick', 'select'],
   setup(props, ctx) {
     const monthMap = ref({
-      jan: '一月',
-      feb: '二月',
-      mar: '三月',
-      apr: '四月',
-      may: '五月',
-      jun: '六月',
-      jul: '七月',
-      aug: '八月',
-      sep: '九月',
-      oct: '十月',
-      nov: '十一月',
-      dec: '十二月',
+      jan: '1月',
+      feb: '2月',
+      mar: '3月',
+      apr: '4月',
+      may: '5月',
+      jun: '6月',
+      jul: '7月',
+      aug: '8月',
+      sep: '9月',
+      oct: '10月',
+      nov: '11月',
+      dec: '12月',
     })
     const months = ref(props.date.locale('en').localeData().monthsShort().map(_ => _.toLowerCase()))
-    const tableRows = ref([[], [], []])
+    const tableRows = ref([[], [], [], []])
     const lastRow = ref(null)
     const lastColumn = ref(null)
     const rows = computed(() => {
       const rows = tableRows.value
       const now = dayjs().startOf('month')
 
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 4; i++) {
         const row = rows[i]
-        for (let j = 0; j < 4; j++) {
+        for (let j = 0; j < 3; j++) {
           let cell = row[j]
           if (!cell) {
             cell = {
@@ -95,7 +95,7 @@ export default {
 
           cell.type = 'normal'
 
-          const index = i * 4 + j
+          const index = i * 3 + j
           const calTime = props.date.startOf('year').month(index)
 
           const calEndDate = props.rangeState.endDate || props.maxDate
@@ -186,7 +186,7 @@ export default {
         lastColumn.value = column
         ctx.emit('changerange', {
           selecting: true,
-          endDate: props.date.startOf('year').month(row * 4 + column),
+          endDate: props.date.startOf('year').month(row * 3 + column),
         })
       }
     }
@@ -202,7 +202,7 @@ export default {
       if (hasClass(target, 'disabled')) return
       const column = target.cellIndex
       const row = target.parentNode.rowIndex
-      const month = row * 4 + column
+      const month = row * 3 + column
       const newDate = props.date.startOf('year').month(month)
       if (props.selectionMode === 'range') {
         if (!props.rangeState.selecting) {

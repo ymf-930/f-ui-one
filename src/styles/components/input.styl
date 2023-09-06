@@ -49,6 +49,10 @@ placeholder() {
     }
   }
   &.fei-input-group-with-append {
+    .fei-input{
+      border-bottom-right-radius: 0!important;
+      border-top-right-radius: 0!important;
+    }
     .fei-input-icon-clear {
       right: 80px;
     }
@@ -62,10 +66,30 @@ placeholder() {
   .fei-input-group-prepend {
     right: -1px;
     z-index: 1;
+    .fei-button:first-child{
+      border-bottom-right-radius: 0!important;
+      border-top-right-radius: 0!important;
+    }
+    .fei-input:first-child{
+      border-bottom-right-radius: 0!important;
+      border-top-right-radius: 0!important;
+    }
+    & + .fei-input{
+      border-bottom-left-radius: 0!important;
+      border-top-left-radius: 0!important;
+    }
   }
 
   .fei-input-group-append {
     left: -1px;
+    >.fei-button:first-child{
+      border-bottom-left-radius: 0!important;
+      border-top-left-radius: 0!important;
+    }
+    >.fei-input:first-child{
+      border-bottom-left-radius: 0!important;
+      border-top-left-radius: 0!important;
+    }
   }
 }
 // 大小设置

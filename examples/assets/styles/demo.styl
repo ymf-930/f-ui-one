@@ -2,9 +2,12 @@
   // button
   .demo-button {
     margin-bottom: 10px;
-    &:last-child {
-      margin-bottom: 0;
+    > div {
       border-radius: var(--fei-border-radius-default);
+    }
+    &:last-child {
+      display: inline-block;
+      margin-bottom: 0;
     }
     .fei-button-group + .fei-button-group {
       margin-left: 8px;

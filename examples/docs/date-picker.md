@@ -88,20 +88,20 @@
       </f-date-picker>
     </div>
     <div style="padding:0 10px;">
+      <div class="demonstration">月</div>
+      <f-date-picker
+        v-model="value3"
+        type="month"
+        placeholder="选择月">
+      </f-date-picker>
+    </div>
+    <div style="padding:0 10px;">
       <div class="demonstration">周</div>
       <f-date-picker
         v-model="value2"
         type="week"
         format="gggg 第 ww 周"
         placeholder="选择周">
-      </f-date-picker>
-    </div>
-    <div style="padding:0 10px;">
-      <div class="demonstration">月</div>
-      <f-date-picker
-        v-model="value3"
-        type="month"
-        placeholder="选择月">
       </f-date-picker>
     </div>
     <div style="padding:0 10px;">
