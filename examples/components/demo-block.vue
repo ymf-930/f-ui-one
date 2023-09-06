@@ -3,6 +3,17 @@
     <div class="source">
       <slot name="source"></slot>
     </div>
+    <div
+      class="demo-block-control"
+      ref="control"
+    >
+      <f-tooltip content="复制代码" placement="top">
+        <i class="f-iconfont f-icon-file-copy" @click="copyCode"></i>
+      </f-tooltip>
+      <f-tooltip :content="controlText" placement="top">
+        <i class="f-iconfont f-icon-code ml-15" @click="isExpanded = !isExpanded"></i>
+      </f-tooltip>
+    </div>
     <div class="meta" ref="meta">
       <div class="description" v-if="$slots.default">
         <slot></slot>
@@ -15,21 +26,15 @@
         <i :class="iconClass"></i>
       </span>
     </div>
-    <div
-      class="demo-block-control"
-      ref="control"
-      @click="isExpanded = !isExpanded"
-    >
-      <i :class="iconClass"></i>&nbsp;
-      <span>{{ controlText }}</span>
-    </div>
   </div>
 </template>
 
 <script>
 import { nextTick } from 'vue'
+import FTooltip from '../../src/components/tooltip/tooltip'
 
 export default {
+  components: { FTooltip },
   data() {
     return {
       isExpanded: false,
@@ -42,7 +47,7 @@ export default {
       return `demo-${this.$router.currentRoute.value.path.split('/').pop()}`
     },
     controlText() {
-      return this.isExpanded ? '隐藏代码' : '显示代码'
+      return this.isExpanded ? '收起代码' : '显示代码'
     },
     codeArea() {
       return this.$el.getElementsByClassName('meta')[0]
@@ -57,6 +62,11 @@ export default {
       }
       return this.$el.getElementsByClassName('highlight')[0].clientHeight
     },
+  },
+  methods: {
+    copyCode(){
+      console.log('copyCode')
+    }
   },
   watch: {
     isExpanded(val) {
@@ -86,8 +96,9 @@ export default {
   }
   .meta {
     position: relative;
-    background-color: #fafafa;
-    border-top: solid 1px #eaeefb;
+    background-color: #fff;
+    //background-color: #fafafa;
+    //border-top: solid 1px #eaeefb;
     overflow: hidden;
     height: 0;
     transition: height .2s;
@@ -160,14 +171,16 @@ export default {
       font-size: 16px;
       line-height: 44px;
       transition: .3s;
+      color: #86929e;
+      &:hover {
+        color: #1677ff;
+        transform: scale(1.2);
+      }
     }
     > span {
       font-size: 14px;
       line-height: 44px;
       transition: .3s;
-    }
-    &:hover {
-      color: #1677ff;
     }
     &:before {
       content: '';
