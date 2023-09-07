@@ -9,7 +9,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div flex="main:justify" style="width:400px;">
     <f-circle :percent="80">
@@ -36,7 +35,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div flex="main:justify" style="width:300px;" class="demo-button">
     <f-circle :percent="percent" :stroke-color="color">
@@ -92,7 +90,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-circle
     :size="250"
@@ -122,7 +119,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-circle :percent="80" dashboard>
     <span class="demo-circle-inner" style="font-size:24px">80%</span>

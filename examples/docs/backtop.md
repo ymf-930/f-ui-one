@@ -11,7 +11,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div style="height:500px;overflow: auto;border:1px solid #eee;" class="scroll-box">
     <div style="padding: 20px;">
@@ -32,7 +31,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div style="height:500px;overflow: auto;border:1px solid #eee;">
     <f-scrollbar style="height:100%;" wrap-class="scrollbar-box">
@@ -54,7 +52,6 @@
 自定义了位置在页面底部 200px,滚动至距顶端 200px 时显示。
 
 ```html
-
 <div class="page-container" flex-box="1">
   <f-scrollbar style="height:100%;" ref="componentScrollBar">
     <router-view></router-view>

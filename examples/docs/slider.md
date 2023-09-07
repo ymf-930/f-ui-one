@@ -5,7 +5,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-slider v-model="value1"></f-slider>
@@ -35,7 +34,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-slider v-model="value4" :step="10"></f-slider>
@@ -68,7 +66,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-slider v-model="value8" show-input></f-slider>
@@ -100,7 +97,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-slider v-model="value11" range :marks="marks"></f-slider>

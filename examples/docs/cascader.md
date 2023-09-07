@@ -7,7 +7,6 @@
 :::demo
 
 ```html
-
 <template>
   <div flex>
     <div class="block" style="width: 220px;margin-right: 20px;">
@@ -108,7 +107,6 @@
 :::demo
 
 ```html
-
 <template>
   <div flex>
     <div class="block" style="width: 220px;margin-right: 20px;">
@@ -210,7 +208,6 @@
 :::demo
 
 ```html
-
 <template>
   <div flex>
     <div class="block" style="width: 220px;margin-right: 20px;">
@@ -302,7 +299,6 @@
 :::demo
 
 ```html
-
 <template>
   <div flex>
     <div class="block" style="width: 220px;margin-right: 20px;">
@@ -395,7 +391,6 @@
 :::demo
 
 ```html
-
 <template>
   <div flex>
     <div class="block" style="width: 220px;margin-right: 20px;">
@@ -498,7 +493,6 @@
 :::demo 可通过 props.checkStrictly = true 来设置父子节点取消选中关联，从而达到选择任意一级选项的目的。
 
 ```html
-
 <template>
   <div flex>
     <div class="block" style="width: 220px;margin-right: 20px;">
@@ -604,7 +598,6 @@ lazyload方法有两个参数，第一个参数node为当前点击的节点，�
 :::demo
 
 ```html
-
 <template>
   <div flex>
     <div class="block" style="width: 220px;margin-right: 20px;">
@@ -713,7 +706,6 @@ lazyload方法有两个参数，第一个参数node为当前点击的节点，�
 :::demo
 
 ```html
-
 <template>
   <div flex>
     <div class="block" style="width: 220px;margin-right: 20px;">
@@ -818,7 +810,6 @@ lazyload方法有两个参数，第一个参数node为当前点击的节点，�
 :::demo scoped slot会传入两个字段 node 和 data，分别表示当前节点的 Node 对象和数据。
 
 ```html
-
 <template>
   <div flex>
     <div class="block" style="width: 220px;margin-right: 20px;">
@@ -912,7 +903,6 @@ lazyload方法有两个参数，第一个参数node为当前点击的节点，�
 :::demo
 
 ```html
-
 <template>
   <div flex>
     <div class="block" style="width: 220px;margin-right: 20px;">
@@ -1006,7 +996,6 @@ lazyload方法有两个参数，第一个参数node为当前点击的节点，�
 :::demo
 
 ```html
-
 <template>
   <div flex>
     <div class="block" style="margin-right: 20px;">

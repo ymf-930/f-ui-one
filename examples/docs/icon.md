@@ -7,7 +7,6 @@ i 标签可以直接设置样式类名为 `f-iconfont f-icon-xxx` 来使用即�
 :::demo size 和 color 可以设置字体大小和颜色
 
 ```html
-
 <div class="demo-icon">
   <i class="f-iconfont f-icon-addteam"></i>
   <f-icon name="read-fill" color="#ff53a5"></f-icon>

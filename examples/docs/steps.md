@@ -9,7 +9,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-steps :current="current">
     <f-step title="已完成" content="这里是该步骤的描述信息"></f-step>
@@ -48,7 +47,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-steps :current="2" size="small">
     <f-step title="已完成"></f-step>
@@ -71,7 +69,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-steps :current="1">
     <f-step title="已完成" icon="sketch"></f-step>

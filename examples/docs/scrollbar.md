@@ -8,7 +8,6 @@
 :::demo
 
 ```html
-
 <template>
   <div style="height: 400px;">
     <f-scrollbar style="height:100%;" ref="componentScrollBar">

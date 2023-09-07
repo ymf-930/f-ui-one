@@ -1,6 +1,6 @@
 # f-ui-one
 
-f-ui-one 是基于vue3.0 的组件库，提供常用组件和公共样式、函数
+f-ui-one 是基于 Vue.js 3 的一套 UI 组件库，主要用于企业级中后台系统。提供常用组件和公共样式、函数。
 
 ## Docs
 
@@ -9,11 +9,12 @@ f-ui-one 是基于vue3.0 的组件库，提供常用组件和公共样式、函�
 
 ### 特性
 
-- 💪  基于 Vue 3.0 Composition API
-- 🔥  Written in TypeScript
-- 🌈  最新图标基于阿里iconfont ant-design 官方图标精简版
-- 🗑  移除了部分冗余代码
-- ⌨️  部分组件代码进行重构优化
+- 💪 基于 Vue 3.0 Composition API
+- 🌈 最新图标基于阿里iconfont ant-design 官方图标精简版
+- 🏳️‍🌈 丰富的组件和功能，满足绝大部分网站场景
+- 🎄 提供开箱即用的 Admin 系统，极大程度节省开发成本
+- 🌵 友好的 API ，自由灵活地使用空间
+- 🍀 细致、漂亮的 UI
 
 ### 支持环境
 

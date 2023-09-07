@@ -7,7 +7,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-affix :offset="80">
     <f-button type="primary">固定在顶部80的位置</f-button>
@@ -24,7 +23,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-affix :offset="20" position="bottom">
     <f-button type="primary">固定在底部20的位置</f-button>

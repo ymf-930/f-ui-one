@@ -11,7 +11,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-select style="width:200px" v-model="select" clearable>
@@ -48,7 +47,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-select style="width:200px" v-model="select" clearable>
@@ -99,7 +97,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-select style="width:200px" v-model="select" clearable>
@@ -161,7 +158,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-select style="width:200px" v-model="select" filterable>
@@ -198,7 +194,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-select style="width:300px" v-model="select" multiple>
@@ -238,7 +233,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div style="width:200px">
     <f-select v-model="selected">
@@ -272,7 +266,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-row :gutter="20">
     <f-col :span="8">
@@ -319,7 +312,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-row :gutter="20">
     <f-col :span="6">

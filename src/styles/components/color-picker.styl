@@ -112,6 +112,8 @@ active() {
   &.show-label {
     width: auto;
     .fei-color-picker__trigger {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
       width: var(--fei-default-height);
     }
     &.fei-color-picker--large .fei-color-picker__trigger {
@@ -122,6 +124,10 @@ active() {
     }
     &.fei-color-picker--mini .fei-color-picker__trigger {
       width: var(--fei-mini-height);
+    }
+    .fei-color-picker__label {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
     }
   }
 }

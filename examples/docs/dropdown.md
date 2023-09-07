@@ -5,7 +5,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-dropdown>
@@ -50,7 +49,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-dropdown>
@@ -106,7 +104,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-dropdown @command="handleClick">
@@ -146,7 +143,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div>
     <f-dropdown>

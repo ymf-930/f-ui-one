@@ -10,7 +10,6 @@
 :::demo
 
 ```html
-
 <f-menu
   :default-active="activeIndex"
   class="f-menu-demo"
@@ -90,7 +89,6 @@
 :::demo 通过`f-menu-item-group`组件可以实现菜单进行分组，分组名可以通过`title`属性直接设定，也可以通过具名 slot 来设定。
 
 ```html
-
 <f-row class="tac">
   <f-col :span="12">
     <h5 style="margin-bottom: 10px;">默认颜色</h5>
@@ -197,7 +195,6 @@
 :::demo
 
 ```html
-
 <f-button-group v-model="isCollapse" style="margin-bottom: 20px;">
   <f-button :type="isCollapse?'default':'primary'" @click="isCollapse = false">展开</f-button>
   <f-button :type="isCollapse?'primary':'default'" @click="isCollapse = true">收起</f-button>

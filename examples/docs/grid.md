@@ -7,7 +7,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-row>
     <f-col span="12">col-12</f-col>
@@ -38,7 +37,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-space>
     <span>栅格间距：</span>
@@ -83,7 +81,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-row type="flex">
     <f-col span="6" order="4">1 | order-4</f-col>
@@ -103,7 +100,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-row>
     <f-col span="14" push="10">col-14 | push="10"</f-col>
@@ -121,7 +117,6 @@ offset 可以设置偏移量
 ::: demo
 
 ```html
-
 <template>
   <f-row>
     <f-col span="8">col-8</f-col>
@@ -146,7 +141,6 @@ offset 可以设置偏移量
 ::: demo
 
 ```html
-
 <template>
   <p>子元素向左排列</p>
   <f-row type="flex" justify="start" class="code-row-bg">
@@ -216,7 +210,6 @@ offset 可以设置偏移量
 ::: demo
 
 ```html
-
 <template>
   <f-row>
     <f-col :xs="2" :sm="4" :md="6" :lg="8">f-col</f-col>

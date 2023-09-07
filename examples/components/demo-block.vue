@@ -20,11 +20,10 @@
       </div>
       <div class="highlight">
         <slot name="highlight"></slot>
+        <div class="code-up pb-8">
+          <f-button dashed icon='up' @click="isExpanded = false" style="width: 100%">收起代码</f-button>
+        </div>
       </div>
-      <span class="expand-btn" @click="isExpanded = false">
-        收起代码&nbsp;
-        <i :class="iconClass"></i>
-      </span>
     </div>
   </div>
 </template>
@@ -32,9 +31,10 @@
 <script>
 import { nextTick } from 'vue'
 import FTooltip from '../../src/components/tooltip/tooltip'
+import FButton from '../../src/components/button/button.vue'
 
 export default {
-  components: { FTooltip },
+  components: { FButton, FTooltip },
   data() {
     return {
       isExpanded: false,
@@ -52,9 +52,6 @@ export default {
     codeArea() {
       return this.$el.getElementsByClassName('meta')[0]
     },
-    iconClass() {
-      return this.isExpanded ? 'f-iconfont f-icon-caret-up' : 'f-iconfont f-icon-caret-down'
-    },
     codeAreaHeight() {
       if (this.$el.getElementsByClassName('description').length > 0) {
         return this.$el.getElementsByClassName('description')[0].clientHeight +
@@ -65,7 +62,11 @@ export default {
   },
   methods: {
     copyCode(){
-      console.log('copyCode')
+      this.$copy().then(result => {
+        if (result) {
+          this.$message.info({ message: `已复制代码至剪切板` })
+        }
+      })
     }
   },
   watch: {
@@ -86,30 +87,21 @@ export default {
 
 <style lang="stylus">
 .demo-block {
+  padding: 16px 16px 0;
   border: solid 1px #ebebeb;
   border-radius: var(--fei-border-radius-default);
   code {
     font-family: Menlo, Monaco, Consolas, Courier, monospace;
   }
   .source {
-    padding: 24px;
+    padding-bottom: 16px;
   }
   .meta {
     position: relative;
     background-color: #fff;
-    //background-color: #fafafa;
-    //border-top: solid 1px #eaeefb;
     overflow: hidden;
     height: 0;
     transition: height .2s;
-    .expand-btn {
-      position: absolute;
-      top: 16px;
-      right: 24px;
-      font-size: 12px;
-      cursor: pointer;
-      color: #1677ff;
-    }
   }
   .description {
     padding: 10px;
@@ -141,7 +133,7 @@ export default {
 
   .highlight {
     pre {
-      margin: 0;
+      margin-bottom: 8px;
     }
     code {
       &.hljs {
@@ -166,6 +158,7 @@ export default {
     text-align: center;
     color: #d3dce6;
     cursor: pointer;
+    border-top 1px dashed #d7dbdf;
     border-radius: 0 0 var(--fei-border-radius-default) var(--fei-border-radius-default);
     i {
       font-size: 16px;
@@ -181,15 +174,6 @@ export default {
       font-size: 14px;
       line-height: 44px;
       transition: .3s;
-    }
-    &:before {
-      content: '';
-      position: absolute;
-      top: -1px;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background-color: #eaeefb;
     }
   }
 }

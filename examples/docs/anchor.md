@@ -7,7 +7,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div style="overflow: hidden;border:1px solid #eee;display: flex;justify-content: flex-end;">
     <div style="width: 200px;">
@@ -34,7 +33,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div style="overflow: hidden;border:1px solid #eee;" flex="box:mean">
     <div style="padding: 20px;background-color: #fff;border-right:1px solid #eee;">
@@ -72,7 +70,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div style="overflow: hidden;border:1px solid #eee;" flex="box:mean">
     <div style="padding: 20px;background-color: #fff;border-right:1px solid #eee;">
@@ -110,7 +107,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-button @click="scrollTo7" size=small>滚动到第七行</f-button>
   <div style="overflow: hidden;border:1px solid #eee;" flex>

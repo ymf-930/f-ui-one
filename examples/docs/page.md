@@ -5,7 +5,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-page :total="100" :current.sync="current"></f-page>
 </template>
@@ -27,7 +26,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-page :total="100" show-sizer></f-page>
 </template>
@@ -40,7 +38,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-page :total="100" show-elevator></f-page>
 </template>
@@ -53,7 +50,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-page :total="100" show-total></f-page>
 </template>
@@ -66,7 +62,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-page :total="100" size="small" show-elevator show-sizer show-total></f-page>
 </template>
@@ -79,7 +74,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-page :total="40" prev-text="上一页" next-text="下一页"></f-page>
 </template>
@@ -92,7 +86,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-page :current="2" :total="50" simple></f-page>
 </template>

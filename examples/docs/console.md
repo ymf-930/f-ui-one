@@ -7,7 +7,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div class="demo-button">
     <f-button @click="$log.print('default print','#df85ff')">custom</f-button>

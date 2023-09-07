@@ -7,7 +7,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div class="block">
     <span class="demonstration">默认不区分颜色</span>
@@ -38,7 +37,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-rate
     v-model="value"
@@ -67,7 +65,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-rate
     :model-value="3.7"

@@ -7,7 +7,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-space>
     space
@@ -25,7 +24,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-space direction="vertical">
     <f-card width="480px" head-tip header="Card">
@@ -52,7 +50,6 @@
 :::demo 使用 `size` 属性控制大小
 
 ```html
-
 <template>
   <f-space direction="vertical" alignment="start" :size="30">
     <f-radio-group v-model="size">
@@ -92,7 +89,6 @@
 :::demo
 
 ```html
-
 <template>
   <f-slider v-model="size" />
   <f-space wrap :size="size">
@@ -130,7 +126,6 @@
 :::demo 利用 `wrap` 控制换行
 
 ```html
-
 <f-space wrap>
   <div v-for="i in 20" :key="i">
     <f-button type="text">文字按钮</f-button>
@@ -147,7 +142,6 @@
 :::demo 字符串 或 数字类型的分隔符
 
 ```html
-
 <template>
   <f-space :size="size" spacer="|">
     <div v-for="i in 2" :key="i">
@@ -184,7 +178,6 @@
 :::demo 用 alignment 来控制对齐
 
 ```html
-
 <template>
   <f-space>
     <div style="width: 240px;margin-bottom: 20px;padding: 8px;border: 1px solid #ccc;">

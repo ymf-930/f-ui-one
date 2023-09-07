@@ -9,7 +9,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-breadcrumb separator="/">
     <f-breadcrumb-item>首页</f-breadcrumb-item>
@@ -46,7 +45,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-breadcrumb separator-icon="right">
     <f-breadcrumb-item><a href="/">首页</a></f-breadcrumb-item>

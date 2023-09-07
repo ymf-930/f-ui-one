@@ -7,7 +7,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div style="width: 224px;border: 1px solid #eee;height: 150px;">
     <f-empty>当前无数据</f-empty>
@@ -24,7 +23,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div style="width: 224px;">
     <div style="border: 1px solid #eee;height: 150px;" v-no-data:[dataText]="true"></div>

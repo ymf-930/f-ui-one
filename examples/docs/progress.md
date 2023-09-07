@@ -9,7 +9,6 @@ Progress 组件设置 `percent` 属性即可，表示进度条对应的百分比
 :::demo 可以设置 `status`配置状态
 
 ```html
-
 <template>
   <f-progress :percent="0"></f-progress>
   <f-progress :percent="70" status="text" active><span>进度70</span></f-progress>
@@ -27,7 +26,6 @@ Progress 组件设置 `percent` 属性即可，表示进度条对应的百分比
 :::demo 可以设置 `text-inside` 来配置属性
 
 ```html
-
 <template>
   <f-progress text-inside :stroke-width="20" :percent="0"></f-progress>
   <f-progress text-inside :stroke-width="20" :percent="70"></f-progress>
@@ -46,7 +44,6 @@ Progress 组件设置 `percent` 属性即可，表示进度条对应的百分比
 :::demo 可以设置 `color` 和 `radius`等 来配置属性
 
 ```html
-
 <template>
   <f-progress :percent="70" :show-text="false"></f-progress>
   <f-progress :percent="40" color="#76eeff"></f-progress>
@@ -64,7 +61,6 @@ Progress 组件设置 `percent` 属性即可，表示进度条对应的百分比
 ::: demo
 
 ```html
-
 <template>
   <div class="demo-button">
     <f-progress :stroke-width="20" :percent="percent" active color="#ff86d8"></f-progress>

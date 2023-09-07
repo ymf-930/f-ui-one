@@ -9,7 +9,6 @@
 :::demo
 
 ```html
-
 <template>
   <div style="width:500px;">
     <f-collapse v-model="value1">
@@ -45,7 +44,6 @@
 :::demo
 
 ```html
-
 <template>
   <div style="width:500px;">
     <f-collapse v-model="value2" accordion>
@@ -81,7 +79,6 @@ simple 设置简单模式
 :::demo
 
 ```html
-
 <template>
   <div style="width:500px;">
     <f-collapse v-model="value3" simple>

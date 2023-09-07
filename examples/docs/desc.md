@@ -9,7 +9,6 @@
 :::demo
 
 ```html
-
 <template>
   <f-desc title="用户信息">
     <f-desc-item label="用户名">韩梅梅</f-desc-item>

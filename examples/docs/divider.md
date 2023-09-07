@@ -9,7 +9,6 @@
 :::demo
 
 ```html
-
 <template>
   <p>这是一段文字...这是一段文字...这是一段文字...这是一段文字...这是一段文字...</p>
   <f-divider></f-divider>
@@ -30,7 +29,6 @@
 :::demo
 
 ```html
-
 <template>
   Text
   <f-divider type="vertical"></f-divider>
@@ -49,7 +47,6 @@ align属性可以设置标题位置 使用 align="left" 设置为行内的垂直
 :::demo
 
 ```html
-
 <template>
   <f-divider align="left">左对齐</f-divider>
   <f-divider align="center">居中对齐</f-divider>
