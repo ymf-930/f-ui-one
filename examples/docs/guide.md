@@ -14,14 +14,11 @@ f-ui-one 是基于 Vue.js 3 的一套 UI 组件库，主要用于企业级中后
 </ul>
 
 ### 支持环境
-适用于 Vue.js 3，兼容现代浏览器，不支持 IE（如需支持 IE9+，请使用 Vue.js 2 及 View UI）。
+适用于 Vue.js 3，兼容现代浏览器。
 
 | Edge | Firefox | Chrome | Safari | Opera           |
 |------|-------- |--------|------- |-----------------|
 | Edge | last 2 versions | last 2 versions | last 2 versions | last 2 versions	|
-
-	 	 	 	 
-Edge	last 2 versions	last 2 versions	last 2 versions	last 2 versions
 
 <ul class="doc-li">
     <li>暂不支持IE所有版本</li>

@@ -9,7 +9,6 @@
 :::demo
 
 ```html
-
 <template>
   <f-card class="box-card" width="480px" head-tip>
     <template v-slot:header>
@@ -34,7 +33,6 @@
 :::demo
 
 ```html
-
 <template>
   <div style="background: #f8f8f8;padding: 20px;">
     <div flex="main:justify box:mean">
@@ -66,7 +64,6 @@
 :::demo
 
 ```html
-
 <template>
   <div style="background: #f8f8f8;padding: 20px;">
     <div flex="main:justify box:mean">
@@ -92,7 +89,6 @@
 :::demo
 
 ```html
-
 <template>
   <div flex="main:justify box:mean">
     <div style="padding: 0 10px; ">

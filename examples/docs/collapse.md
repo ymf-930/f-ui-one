@@ -118,7 +118,6 @@ simple 设置简单模式
 :::demo
 
 ```html
-
 <template>
   <div>
     <f-collapse-wrap title="标题栏" collapse>

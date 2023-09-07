@@ -31,7 +31,6 @@
 :::demo
 
 ```html
-
 <template>
   <div flex="cross:center">
     <span style="margin: 0 5px;">Size:</span>

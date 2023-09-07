@@ -257,7 +257,7 @@ export default {
       customColor4: '#a0d911',
       customColor5: '#fa541c',
       customColor6: '#2f54eb',
-      custom: '#1890ff',
+      custom: '#1677ff',
       colorsList: [
         '#1089ff',
         '#52c41a',

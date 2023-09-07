@@ -72,6 +72,7 @@ placeholder() {
     font-size: 0;
     position: relative;
     overflow: hidden;
+    padding: 4px;
     &:after, &:before {
       content: "";
       top: 50%;
@@ -158,6 +159,7 @@ placeholder() {
     line-height: 32px;
     font-size: 12px;
     color: var(--fei-color-text-default);
+    border-radius: var(--fei-border-radius-default);
     &.disabled {
       color: var(--fei-color-text-placeholder);
       cursor: not-allowed;
@@ -196,6 +198,7 @@ placeholder() {
     position: relative;
     text-align: center;
     z-index: 1;
+    padding: 4px;
     &:after {
       content: '';
       position: absolute;

@@ -9,7 +9,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div class="demo-button" flex="cross:center">
     <f-button>Default</f-button>
@@ -28,7 +27,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div class="demo-button">
     <f-button type="primary">Primary</f-button>
@@ -49,7 +47,6 @@
 ::: demo
 
 ```html
-
 <template>
   <f-divider align="left">[plain]简约按钮</f-divider>
   <div class="demo-button">
@@ -95,7 +92,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div class="demo-button">
     <f-button icon="search">search</f-button>
@@ -115,7 +111,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div class="demo-button" flex="cross:center">
     <f-button disabled>Default</f-button>
@@ -170,7 +165,6 @@
 ::: demo 注意，文字按钮无法使用样式变量进行覆盖，可自主设置颜色值来改变
 
 ```html
-
 <template>
   <div class="demo-button">
     <div>
@@ -206,7 +200,6 @@
 ::: demo
 
 ```html
-
 <template>
   <div class="demo-button">
     <f-button-group>
@@ -237,7 +230,6 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 ::: demo
 
 ```html
-
 <template>
   <div class="demo-button">
     <f-button size="large">Large</f-button>
