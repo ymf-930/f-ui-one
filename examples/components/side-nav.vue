@@ -11,7 +11,7 @@
             {{ nav.desc }}
           </router-link>
           <p v-else class="side-nav-group">{{ nav.desc }}</p>
-          <div v-for="item in nav.items" :key="item.name">
+          <div v-for="item in nav.items" :key="item.name" class='side-nav-item'>
             <router-link :to="{name: item.name}" :class="$route.name===item.name ? 'active' : ''"
                          class="slid-nav-component">
               <i :class="['f-iconfont','f-icon-'+item.icon]" v-if="item.icon"></i>
@@ -123,8 +123,11 @@ export default {
       color: #3f536e;
       font-weight: normal;
       cursor: pointer;
+      margin: 4px;
+      border-radius: var(--fei-border-radius-default);
       &:hover {
         color: #1677ff;
+        background-color: var(--fei-color-primary-light5);
       }
     }
     .side-nav-group {
@@ -157,17 +160,8 @@ export default {
     }
     .active {
       color: #1677ff;
-      background: #f0faff;
-      &::after {
-        content: "";
-        display: block;
-        width: 3px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        background: #1677ff;
-      }
+      background: var(--fei-color-primary-light5);
+      border-left 3px solid var(--fei-color-primary);
     }
   }
   .fei-scrollbar__wrap {
