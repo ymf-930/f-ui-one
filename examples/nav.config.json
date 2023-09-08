@@ -437,7 +437,7 @@
           "path": "/carousel"
         },
         {
-          "desc": "Timeline 时间线",
+          "desc": "Timeline 时间轴",
           "icon": "arrowdown",
           "name": "timeline",
           "path": "/timeline"
