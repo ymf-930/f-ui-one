@@ -1,5 +1,6 @@
 // 这块是为了覆盖文档的样式，后期文档整理再删除
 .fei-table {
+  border-radius: var(--fei-border-radius-large) var(--fei-border-radius-large) 0 0;
   table {
     width: auto;
     border-collapse: separate;
@@ -7,8 +8,19 @@
     border: none;
     color: var(--fei-color-text-default);
     font-size: var(--fei-font-size-default);
+    border-radius: var(--fei-border-radius-large) var(--fei-border-radius-large) 0 0;
     thead, tbody {
       width: auto;
+    }
+    thead{
+      tr:first-child {
+        > *:first-child {
+          border-start-start-radius: var(--fei-border-radius-large);
+        }
+        >*:last-child {
+          border-start-end-radius: var(--fei-border-radius-large);
+        }
+      }
     }
   }
   th, td {
@@ -132,6 +144,10 @@
     table-layout: fixed;
   }
   &-wrapper-with-border {
+    border-radius: var(--fei-border-radius-large) var(--fei-border-radius-large) 0 0;
+    .fei-table{
+      border-radius: var(--fei-border-radius-large) var(--fei-border-radius-large) 0 0;
+    }
     &:before, &:after {
       content: '';
       position: absolute;
