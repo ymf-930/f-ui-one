@@ -78,12 +78,12 @@ Fei UI One 提供了一套默认的主题变量，并在一定程度上可以定
 :root {
     /* primary-color */
     --fei-color-primary: #1677ff;
-    --fei-color-primary-light1: #40a1ff;
-    --fei-color-primary-light2: #70b8ff;
-    --fei-color-primary-light3: #9fd0ff;
-    --fei-color-primary-light4: #cfe7ff;
-    --fei-color-primary-light5: #e7f3ff;
-    --fei-color-primary-light6: #f3f9ff;
+    --fei-color-primary-light1: #4592ff;
+    --fei-color-primary-light2: #73adff;
+    --fei-color-primary-light3: #a2c9ff;
+    --fei-color-primary-light4: #d0e4ff;
+    --fei-color-primary-light5: #e8f1ff;
+    --fei-color-primary-light6: #f3f8ff;
     --fei-color-primary-active: #0e7be6;
     /* success-color */
     --fei-color-success: #52c41a;
