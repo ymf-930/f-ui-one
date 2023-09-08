@@ -231,16 +231,16 @@
 
 ### Space Props
 
-| 参数      | 说明    | 类型      | 可选值       | 默认值   |
-|---------- |-------- |---------- |-------------  |-------- |
-| alignment | 对齐的方式 | string |  - | 'center' |
-| class     | 类名      | string / Array<Object \| String> / Object | - | - |
+| 参数      | 说明    | 类型      | 可选值      | 默认值 |
+|---------- |-------- |---------- |----------|----|
+| alignment | 对齐的方式 | string | 	— | 'center' |
+| class     | 类名      | string / Array<Object \| String> / Object | — | — |
 | direction | 排列的方向 | string | vertical/horizontal | horizontal |
-| prefixCls | 给 space-items 的类名前缀 | string | fei-space | - |
-| style     | 额外样式   | string / Array<Object \| String> / Object | - | - |
-| spacer    | 间隔符     | string / number / VNode | - | - |
-| size      | 间隔大小   | string / number / [number, number] | - | 'small' |
-| wrap      | 设置是否自动折行 | boolean | true / false  | false |
+| prefixCls | 给 space-items 的类名前缀 | string | fei-space | — |
+| style     | 额外样式   | string / Array<Object \| String> / Object | — | — |
+| spacer    | 间隔符     | string / number / VNode | — | —  |
+| size      | 间隔大小   | string / number / [number, number] | — | 'small' |
+| wrap      | 设置是否自动折行 | boolean | true / false | false |
 
 ### Space Slot
 

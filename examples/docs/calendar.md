@@ -43,7 +43,7 @@
 |---------- |-------- |---------- |-------------  |-------- |
 | grid-height | 日期高度，不填默认 80  | String  |  —   |   80px  |
 | text-align  | 日期对其方式 | String  | left center right |   left  |
-| mini | 迷你模式 | Boolean  | l—  |   —  |
+| mini | 迷你模式 | Boolean  | —  |   —  |
 | body-style   | 日期表body样式 | Object  | —  |   —  |
 | day-style  | 每天样式 | Object  | —  |   —  |
 
