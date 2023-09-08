@@ -62,7 +62,8 @@ export default {
   },
   methods: {
     copyCode(){
-      this.$copy().then(result => {
+      const code = this.$el.getElementsByClassName('html')[0].innerText
+      this.$copy(code).then(result => {
         if (result) {
           this.$message.info({ message: `已复制代码至剪切板` })
         }
