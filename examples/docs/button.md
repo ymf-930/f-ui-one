@@ -204,9 +204,7 @@
   <div class="demo-button">
     <f-button-group>
       <f-button type="primary" icon="left">上一页</f-button>
-      <f-button type="primary"
-      >下一页<i class="f-iconfont f-icon-right"></i
-      ></f-button>
+      <f-button type="primary">下一页<i class="f-iconfont f-icon-right"></i></f-button>
     </f-button-group>
     <f-button-group>
       <f-button>上一页</f-button>

@@ -27,13 +27,8 @@ f-ui-one 是基于 Vue.js 3 的一套 UI 组件库，主要用于企业级中后
 
 ### 版本
 
-[![NPM version](https://img.shields.io/badge/npm-v1.0.8-blue)](https://www.npmjs.com/package/f-ui-one)
+[![NPM version](https://img.shields.io/badge/npm-v1.1.1-blue)](https://www.npmjs.com/package/f-ui-one)
 
-### 相关链接
-
-[element-plus](https://element-plus.gitee.io/#/zh-CN/component/installation)
-
-[f-ui-one](https://gitee.com/ymf930/f-ui-one/)
 
 ### 安装
 
