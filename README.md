@@ -4,7 +4,9 @@ f-ui-one 是基于 Vue.js 3 的一套 UI 组件库，主要用于企业级中后
 
 ## Docs
 
-[Document文档](https://ymf930.gitee.io/f-ui-one/)
+[Document文档](https://ymf-930.github.io/f-ui-one/)
+
+[GitHub仓库](https://github.com/ymf-930/f-ui-one) | [Gitee镜像](https://gitee.com/ymf930/f-ui-one)
 
 
 ### 特性
