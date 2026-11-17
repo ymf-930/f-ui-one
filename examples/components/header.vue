@@ -3,7 +3,7 @@
     <div class="header-container">
       <div class="left" style="width: 580px" flex="main:justify cross:center">
         <div class="logo">
-          <img src='../assets/images/logo/f-ui-logo.svg' class="icon" alt="icon"/>
+          <img src='../assets/images/logo/fei-logo.png' class="icon" alt="icon"/>
           <div class="text">
             <img src="../assets/images/f-ui-one-text.svg" alt="text"/>
           </div>
