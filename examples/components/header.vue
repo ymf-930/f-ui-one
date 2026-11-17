@@ -24,7 +24,6 @@
               <f-dropdown-item name="fei-admin">fei-admin</f-dropdown-item>
               <f-dropdown-item name="fei-datav">fei-datav</f-dropdown-item>
               <f-dropdown-item name="fei-editor">fei-editor</f-dropdown-item>
-              <f-dropdown-item name="fei-charts">fei-charts</f-dropdown-item>
             </f-dropdown-menu>
           </template>
         </f-dropdown>
@@ -58,13 +57,18 @@ export default {
     handleCommand(name) {
       const githubUrl = `https://github.com/ymf-930/${name}/`
       const giteeUrl = `https://gitee.com/ymf930/${name}/`
-      const preview = `https://ymf930.gitee.io/${name}/`
+      const previews = {
+        'fei-admin': 'https://ymf-930.github.io/fei-admin/',
+        'fei-datav': 'https://ymf-930.github.io/fei-datav/',
+        'fei-editor': 'https://ymf-930.github.io/fei-editor/',
+      }
+      const preview = previews[name]
       this.$log.primary(`------------------------------[${name}]-------------------------------`)
       this.$log.primary(`github：  ${githubUrl}`)
       this.$log.primary(`gitee：  ${giteeUrl}`)
       this.$log.primary(`preview：${preview}`)
       this.$log.primary('----------------------------------------------------------------------------')
-      this.$open(preview, true)
+      if (preview) this.$open(preview, true)
     },
   },
 }
